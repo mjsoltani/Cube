@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمونه کارها</title>
+    <link rel="shortcut icon" href="{% static 'work_samples/C_M_T/image/logo.png' %}" type="image/x-icon">
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'work_samples/C_M_T/css/style8.css' %}">
+    <link rel="stylesheet" href="{% static 'work_samples/C_M_T/css/normalize.css' %}">
+    <script src="{% static 'work_samples/C_M_T/js/modernizr.custom.js' %}"></script>
+    <!--link main.css-->
+    <link rel="stylesheet" href="{% static 'work_samples/C_M_T/css/main.css' %}">
+</head>
+
+<body>
+
+    <!--main section-->
+    <section id="main">
+        <div class="icon-container">
+            <div class="container">
+                <!--header section-->
+                <div class="header-container">
+                    <div class="header d-flex justify-content-between">
+                        <div class="header-logo">
+                            <a href="{% url 'porto:portfolio' %}">
+                                <img src="{% static 'work_samples/C_M_T/image/Up Right Icon - cube logo.png' %}" alt="logo" height="45px">
+                            </a>
+                        </div>
+                        <div class="header-button d-none d-lg-block">
+                            <button type="submit">
+                                <a href="{% url 'porto:about_us' %}">درباره ما</a>
+                            </button>
+                        </div>
+                        <!--header button-->
+                        <div class="header-icon d-block d-lg-none">
+                            <button id="trigger-overlay">
+                                    <div class="icon-container" >
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                        <div class="bar3"></div>
+                                    </div>
+                            </button>
+                            <!--/header button-->
+                        </div>
+                    </div>
+                    <!--/header section-->
+                </div>
+                <!--main items-->
+                <div class="main-section">
+                    <div class="items-container">
+                        <div class="row">
+                            <div class="items d-flex flex-column flex-md-row " id="item1">
+                                <div class="text-container col-12 col-sm-12 col-md-5 col-lg-6">
+                                    <div class="text d-flex flex-column justify-content-center align-items-center align-items-md-start">
+
+                                        <p>آذریان کلاب</p>
+                                        <p>کلاب دوستان آذریان</p>
+                                        <p>در این نمونه، سایت به طور کامل علاوه بر واکنش گرا بودن امنیت و پنل قدرتمند خوش رو هم دارد همچنین زبان های پیشرفته سرعت سایت.......
+                                        </p>
+                                        <button>
+                                                <a href="{% url 'porto:WS_CMT_detail' %}">ادامه</a>
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="background-image col-12 col-sm-12 col-md-7 col-lg-6 d-flex">
+                                    <img src="{% static 'work_samples/C_M_T/image/photo/SamplesF1.jpg' %}" alt="image" class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                </div>
+                            </div>
+
+                            <div class="item d-flex flex-column flex-md-row" id="item3">
+                                <div class="text-container col-12 col-sm-12 col-md-5 col-lg-6 ">
+                                    <div class="text d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                        <p>سراج</p>
+                                        <p>موسسه فرهنگی</p>
+                                        <p>در این نمونه، سایت به طور کامل علاوه بر واکنش گرا بودن امنیت و پنل قدرتمند خوش رو هم دارد همچنین زبان های پیشرفته سرعت سایت.......
+                                        </p>
+                                        <button>
+                                                <a href="{% url 'porto:WS_CMT_detail' %}">
+                                                ادامه
+                                                </a>
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="background-image col-12 col-sm-12 col-md-7 col-lg-6 d-flex">
+                                    <img src="{% static 'work_samples/C_M_T/image/photo/SamplesirFreepik.jpg' %}" alt="image" class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                </div>
+                            </div>
+                            <div class="item  d-flex flex-column flex-md-row" id="item4">
+                                <div class="text-container col-12 col-sm-12 col-md-5 col-lg-6 ">
+                                    <div class="text d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                        <p>اوج</p>
+                                        <p>موسسه فرهنگی</p>
+                                        <p>در این نمونه، سایت به طور کامل علاوه بر واکنش گرا بودن امنیت و پنل قدرتمند خوش رو هم دارد همچنین زبان های پیشرفته سرعت سایت.......
+                                        </p>
+                                        <button>
+                                                <a href="{% url 'porto:WS_CMT_detail' %}">
+                                                ادامه
+                                                </a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="background-image col-12 col-sm-12 col-md-7 col-lg-6 d-flex">
+                                    <img src="{% static 'work_samples/C_M_T/image/photo/SamplesWeeding-Thems.jpg' %}" alt=" image " class=" col-12 col-sm-12 col-md-12 col-lg-12 ">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--/main items-->
+                </div>
+                <!--more items-->
+                <div class="more-button d-flex justify-content-center col-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <button>
+                            <a href="# ">بیشتر</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="footer-container d-flex align-items-center ">
+            <div class="footer-text ">
+                <div class="container d-flex flex-column align-items-center align-items-lg-start ">
+                    <p>جهت اطلاعات بیشتر</p>
+                    <p>از فرم درخواست مشاوره یا با ما تماس بگیرید...</p>
+                    <div class="footer-button ">
+                        <button>
+                            <a href="{% url 'porto:about_us' %}">درباره ما</a>
+                        </button>
+                        <p>0910-337-1457</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+    <div class="overlay overlay-contentscale ">
+        <!--navbar responsive-->
+        <button type="button " class="overlay-close ">Close</button>
+        <nav>
+            <ul>
+                <li><a href="{% url 'porto:portfolio' %}">صفحه اصلی </a></li>
+                <li><a href="{% url 'porto:about_us' %}">درباره ما</a></li>
+                <li><a href="{% url 'porto:WS_WDT' %}">نمونه کار ها</a></li>
+            </ul>
+        </nav>
+        <!--/navbar responsive-->
+    </div>
+
+
+
+
+    <!--script bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js " integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k " crossorigin="anonymous "></script>
+    <!--script icon responsiv-->
+    <script src="{% static 'work_samples/C_M_T/js/classie.js' %}"></script>
+    <script src="{% static 'work_samples/C_M_T/js/demo7.js' %}"></script>
+    <!--script gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js " integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin=" anonymous "></script>
+    <!--script app.js-->
+    <script src="{% static 'work_samples/C_M_T/js/app.js' %}"></script>
+</body>
+
+</html>

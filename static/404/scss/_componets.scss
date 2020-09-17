@@ -1,0 +1,80 @@
+section {
+    .container {
+        .main-section {
+            .row {
+                .main-title {
+                    width: 100%;
+                    height: 100vh;
+                    .title {
+                        p {
+                            color: white;
+                        }
+                        p:nth-child(1) {
+                            font-size: 80px;
+                            color: #CEAB73;
+                            font-family: revert;
+                            font-weight: 700;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 20px;
+                            margin-bottom: 3rem;
+                        }
+                        p:nth-child(3) {
+                            text-align: center;
+                            max-width: 420px;
+                            font-size: 17px;
+                        }
+                        button {
+                            background: none;
+                            border: solid 1px #CEAB73;
+                            display: block;
+                            width: 8rem;
+                            height: 3rem;
+                            margin-top: 3rem;
+                            cursor: pointer;
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                font-size: 16px;
+                                font-family: sans-ser;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                background-color: transparent;
+                                padding: 9px;
+                                transition-duration: 0.5s;
+                                &:hover {
+                                    background-color: #CEAB73;
+                                }
+                            }
+                        }
+                    }
+                }
+                .main-symbol {
+                    width: 100%;
+                    height: 100vh;
+                    .symbol {
+                        width: 50vh;
+                        border: solid 2px #CEAB73;
+                        height: 50vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100%;
+                        animation: rotate-center 3s linear infinite both;
+                        p:nth-child(1) {
+                            color: white;
+                            font-size: 100px;
+                            font-weight: 600;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

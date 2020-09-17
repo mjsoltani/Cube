@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم درخواست مشاوره</title>
+    <!--link css-->
+    <link rel="stylesheet" href="{% static 'form/css/main.css' %}">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'form/library/materialize-css/dist/css/materialize.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'Form/ui/logo.png' %}" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <section>
+        <!--form container-->
+        <div class="form-container">
+            <div class="container">
+                <div class="form-header">
+                    <p>فرم درخواست مشاوره</p>
+                </div>
+                <hr>
+                <!--first form container-->
+                <form class="col s12" action="../mokab-blog/index.html">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="input-field col s12 l6">
+                            <input id="last_name" type="text" class="validate" required>
+                            <label for="last_name">نام و نام خانوادگی</label>
+                        </div>
+                        <div class="input-field col s12 l6">
+                            <input id="first_name" type="text" class="validate" required>
+                            <label for="first_name" class="lable">سایر توضیحات</label>
+                        </div>
+                    </div>
+                    <!--/first form container-->
+
+                    <!--second form container-->
+                <div class="second-forms">
+                    <div class="row">
+                        <div class="input-field col s12 l6">
+                            <input id="tel" type="text" class="validate" required>
+                            <label for="tel" class="lable">شماره تماس</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 l6">
+                            <select>
+                                 <option value="" disabled selected>طراحی وب سایت</option>
+                                 <option value="1">وب سایت شرکتی</option>
+                                 <option value="2">وب سایت فروشگاهی</option>
+                                <option value="3">وب سایت شخصی</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">ایمیل</label>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="button">
+                    <div class="button-container-first">
+                        <button class="clear" type="reset">پاک کردن</button>
+                    </div>
+                    <div class="button-container-second">
+                        <button type="submit">ادامه</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!--/second form container-->
+        </div>
+        <!--left background-->
+        <div class="left-background">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <!--/left background-->
+        </div>
+
+        <!--/form container-->
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="{% static 'form/library/materialize-css/dist/js/materialize.min.js' %}"></script>
+
+    <!--script app.js-->
+    <script src="{% static 'form/library/materialize-css/js/app.js' %}"></script>
+</body>
+
+</html>

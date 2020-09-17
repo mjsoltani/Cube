@@ -1,0 +1,364 @@
+header {
+    .header-container {
+        .container {
+            .nav-container {
+                position: relative;
+                top: 30px;
+                width: 100%;
+                height: 10vh;
+                .nav-ju {
+                    width: 100%;
+                    height: 100%;
+                    .nav-logo {
+                        img {
+                            height: 35px;
+                        }
+                    }
+                    .nav-button {
+                        .header-button {
+                            button {
+                                display: block;
+                                width: 200px;
+                                height: 55px;
+                                border: none;
+                                background-color: white;
+                                a {
+                                    color: black;
+                                    font-family: iranSans;
+                                    display: block;
+                                    width: 200px;
+                                    height: 55px;
+                                    padding: 12px;
+                                    text-decoration: none;
+                                    transition-duration: 0.5s;
+                                    &:hover {
+                                        background-color: #d9b478;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                        .header-icon {
+                            margin-top: -5px;
+                            .icon-container {
+                                display: inline-block;
+                                cursor: pointer;
+                                border: solid 1px white;
+                                border-radius: 110%;
+                                padding: 4px 7px;
+                                transform: scale(0.70);
+                            }
+                            .bar1,
+                            .bar2,
+                            .bar3 {
+                                width: 23px;
+                                height: 2px;
+                                background-color: white;
+                                margin: 6px 0;
+                                transition: 0.4s;
+                            }
+                            .change .bar1 {
+                                transform: rotate(-46deg) translate(-4px, 3px);
+                            }
+                            .change .bar2 {
+                                opacity: 0;
+                            }
+                            .change .bar3 {
+                                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                                transform: rotate(45deg) translate(-8px, -8px);
+                            }
+                            #trigger-overlay {
+                                background: none;
+                                border: none;
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-header {
+                position: relative;
+                top: 85px;
+                width: 100%;
+                .header {
+                    .row {
+                        .text-header {
+                            width: 100%;
+                            height: 500px;
+                            p:nth-child(1) {
+                                color: white;
+                                font-family: iranSans;
+                                font-size: 16px;
+                            }
+                            p:nth-child(2) {
+                                color: white;
+                                font-family: iranSansbold;
+                                font-size: 35px;
+                                max-width: 254px;
+                                margin-bottom: 20px;
+                            }
+                            p:nth-child(3) {
+                                color: white;
+                                font-family: iranSans;
+                                max-width: 420px;
+                                text-align: justify;
+                                line-height: 35px;
+                                font-size: 20px;
+                            }
+                            button {
+                                width: 150px;
+                                height: 50px;
+                                margin-top: 15px;
+                                margin-bottom: 52px;
+                                background: white;
+                                border: none;
+                                a {
+                                    color: black;
+                                    font-family: iranSans;
+                                    text-decoration: none;
+                                    display: block;
+                                    width: 150px;
+                                    height: 50px;
+                                    padding: 12px;
+                                    transition-duration: 0.5s;
+                                    &:hover {
+                                        background-color: #d9b478;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                        .header-background {
+                            .img {
+                                video {
+                                    width: 95%;
+                                    border-radius: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .main-description {
+        .container {
+            max-width: 1500px;
+        }
+        .description {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            top: 100px;
+            p:nth-child(1) {
+                font-family: iranSansbold;
+                font-size: 40px;
+                max-width: 300px;
+                text-align: center;
+                line-height: 60px;
+                margin-bottom: 45px;
+            }
+            p:nth-child(2) {
+                font-family: iranSans;
+                text-align: center;
+                max-width: 630px;
+                font-size: 20px;
+                line-height: 37px;
+            }
+        }
+        .description-slider {
+            width: 100%;
+            height: auto;
+            .owl-carousel {
+                .owl-dots.disabled,
+                .owl-carousel .owl-nav {
+                    display: none !important;
+                }
+                .post {
+                    .item {
+                        border-radius: 15px;
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            border-radius: 15px;
+                            height: 100%;
+                            border: solid 3px #CEAB73;
+                        }
+                    }
+                    p {
+                        font-family: iranSans;
+                        font-size: 16px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .main-Services {
+        .Services-container {
+            width: 100%;
+            position: relative;
+            top: 120px;
+            .container {
+                .Services {
+                    p:nth-child(1) {
+                        color: white;
+                        font-family: iranSansmed;
+                        font-size: 27px;
+                        margin-bottom: 10px;
+                    }
+                    p:nth-child(2) {
+                        color: white;
+                        font-family: iranSansbold;
+                        font-size: 40px;
+                    }
+                }
+                .Services-items {
+                    position: relative;
+                    top: 30px;
+                    width: 100%;
+                    .item {
+                        width: 100%;
+                        height: auto;
+                    }
+                    #item1 {
+                        .Services-text {
+                            p {
+                                font-size: 24px;
+                                color: white;
+                                font-family: iranSans;
+                                text-align: justify;
+                                max-width: 370px;
+                            }
+                        }
+                        .Services-image {
+                            img {
+                                height: 200px !important;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    #item2 {
+                        .Services-text {
+                            p {
+                                font-size: 24px;
+                                color: white;
+                                font-family: iranSans;
+                                text-align: justify;
+                                max-width: 326px;
+                            }
+                            span {
+                                font-size: 20px;
+                            }
+                        }
+                        .Services-image {
+                            img {
+                                height: 200px !important;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    #item3 {
+                        .Services-text {
+                            p {
+                                font-size: 24px;
+                                color: white;
+                                font-family: iranSans;
+                                text-align: justify;
+                            }
+                            span {
+                                font-size: 20px;
+                            }
+                        }
+                        .Services-image {
+                            img {
+                                height: 150px !important;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    #item4 {
+                        .Services-text {
+                            margin-top: 3rem;
+                            p {
+                                font-size: 24px;
+                                color: white;
+                                font-family: iranSans;
+                                text-align: justify;
+                                line-height: 25px;
+                            }
+                            span {
+                                font-size: 20px;
+                            }
+                        }
+                        .Services-image {
+                            img {
+                                height: 198px !important;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .footer-container {
+        width: 50%;
+        height: 100%;
+        .footer-text {
+            position: relative;
+            top: 4rem;
+            margin-right: 60px;
+            p:nth-child(1) {
+                font-family: iranSansmed;
+                font-size: 25px;
+            }
+            p:nth-child(2) {
+                font-family: iranSansbold;
+                max-width: 277px;
+                font-size: 30px;
+                text-align: justify;
+            }
+        }
+        .footer-button {
+            margin-top: 77px;
+            margin-bottom: 90px;
+            button {
+                width: 550px;
+                height: 50px;
+                background: #282828;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color: white;
+                    font-family: iranSans;
+                    text-decoration: none;
+                    display: block;
+                    width: 550px;
+                    height: 50px;
+                    padding: 12px;
+                    transition-duration: 0.5s;
+                    &:hover {
+                        background-color: #d9b478;
+                        color: white;
+                    }
+                }
+            }
+            p {
+                font-size: 25px !important;
+                margin-top: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+}

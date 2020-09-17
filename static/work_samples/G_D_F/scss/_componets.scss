@@ -1,0 +1,283 @@
+#main {
+    .header-container {
+        .header {
+            .header-logo {
+                margin-top: 30px;
+                img {
+                    height: 35px;
+                }
+            }
+            .header-icon {
+                margin-top: 25px;
+                margin-left: -5px;
+                .icon-container {
+                    display: inline-block;
+                    cursor: pointer;
+                    border: solid 1px white;
+                    border-radius: 110%;
+                    padding: 4px 7px;
+                    transform: scale(0.80);
+                }
+                .bar1,
+                .bar2,
+                .bar3 {
+                    width: 23px;
+                    height: 2px;
+                    background-color: white;
+                    margin: 6px 0;
+                    transition: 0.4s;
+                }
+                .change .bar1 {
+                    transform: rotate(-46deg) translate(-4px, 3px);
+                }
+                .change .bar2 {
+                    opacity: 0;
+                }
+                .change .bar3 {
+                    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                    transform: rotate(45deg) translate(-8px, -8px);
+                }
+                #trigger-overlay {
+                    background: none;
+                    border: none;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .header-button {
+                margin-top: 30px;
+                button {
+                    width: 200px;
+                    height: 50px;
+                    background: white;
+                    border: none;
+                    a {
+                        color: black;
+                        font-family: iranSans;
+                        text-decoration: none;
+                        height: 55px;
+                        display: block;
+                        text-align: center;
+                        padding: 12px;
+                        background-color: white;
+                        transition-duration: 0.5s;
+                        &:hover {
+                            background-color: #d9b478;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-section {
+        .items-container {
+            .row {
+                .items {
+                    position: relative;
+                    width: 100%;
+                    height: 400px;
+                    .text-container {
+                        .text {
+                            width: 100%;
+                            height: 500px;
+                            p:nth-child(1) {
+                                color: white;
+                                font-family: iranSansbold;
+                                font-size: 30px;
+                                margin-bottom: 20px;
+                            }
+                            p:nth-child(2) {
+                                color: white;
+                                font-family: iranSansmed;
+                                font-size: 28px;
+                            }
+                            p:nth-child(3) {
+                                font-family: iranSans;
+                                font-size: 20px;
+                                color: white;
+                                max-width: 500px;
+                                line-height: 35px;
+                                text-align: justify;
+                            }
+                            button {
+                                width: 150px;
+                                height: 50px;
+                                margin-top: 15px;
+                                margin-bottom: 16px;
+                                background: white;
+                                border: none;
+                                a {
+                                    color: black;
+                                    font-family: iranSans;
+                                    text-decoration: none;
+                                    display: block;
+                                    width: 150px;
+                                    height: 50px;
+                                    padding: 12px;
+                                    transition-duration: 0.5s;
+                                    &:hover {
+                                        background-color: #d9b478;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .background-image {
+                        padding: 0;
+                        .img {
+                            height: 400px;
+                            background-color: white;
+                        }
+                    }
+                }
+                .item {
+                    width: 100%;
+                    height: 400px;
+                    margin-top: 210px;
+                    .text-container {
+                        .text {
+                            position: relative;
+                            top: -2rem;
+                            width: 100%;
+                            height: 500px;
+                            p:nth-child(1) {
+                                color: white;
+                                font-family: iranSansbold;
+                                font-size: 30px;
+                                margin-bottom: 20px;
+                            }
+                            p:nth-child(2) {
+                                color: white;
+                                font-family: iranSansmed;
+                                font-size: 28px;
+                            }
+                            p:nth-child(3) {
+                                font-family: iranSans;
+                                font-size: 20px;
+                                color: white;
+                                max-width: 500px;
+                                line-height: 35px;
+                                text-align: justify;
+                            }
+                            button {
+                                width: 150px;
+                                height: 50px;
+                                margin-top: 15px;
+                                margin-bottom: 16px;
+                                background: white;
+                                border: none;
+                                a {
+                                    color: black;
+                                    font-family: iranSans;
+                                    text-decoration: none;
+                                    display: block;
+                                    width: 150px;
+                                    height: 50px;
+                                    padding: 12px;
+                                    transition-duration: 0.5s;
+                                    &:hover {
+                                        background-color: #d9b478;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .background-image {
+                        padding: 0;
+                        .img {
+                            height: 400px;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .more-button {
+        padding: 0;
+        margin-top: 200px;
+        button {
+            margin-bottom: 100px;
+            width: 70%;
+            height: 50px;
+            background: white;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                color: black;
+                font-family: iranSans;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 50px;
+                padding: 9px;
+                transition-duration: 0.5s;
+                &:hover {
+                    background-color: #d9b478;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .footer-container {
+        width: 50%;
+        height: 100%;
+        .footer-text {
+            position: relative;
+            top: 4rem;
+            margin-right: 60px;
+            p:nth-child(1) {
+                font-family: iranSansmed;
+                font-size: 25px;
+            }
+            p:nth-child(2) {
+                font-family: iranSansbold;
+                max-width: 277px;
+                font-size: 30px;
+                text-align: justify;
+            }
+        }
+        .footer-button {
+            margin-top: 78px;
+            margin-bottom: 90px;
+            button {
+                width: 550px !important;
+                height: 50px;
+                background: #282828;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color: white;
+                    font-family: iranSans;
+                    text-decoration: none;
+                    display: block;
+                    width: 550px !important;
+                    height: 50px;
+                    padding: 12px !important;
+                    transition-duration: 0.5s;
+                    &:hover {
+                        background-color: #d9b478;
+                        color: white;
+                    }
+                }
+            }
+            p {
+                font-size: 25px !important;
+                margin-top: 50px;
+                font-weight: 700;
+            }
+        }
+    }
+}

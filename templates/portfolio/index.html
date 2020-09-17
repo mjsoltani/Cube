@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="شرکت فنی مهندسی مکعب ">
+    <meta name="description" content="شرکت فنی مهندسی مکعب افتخار این را دارد تا در زمینه طراحی سایت و گرافیکبا رویکرد خلاق ، منظم و باکیفیت فعالیت کرد">
+    <!--link bootsatap-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{% static 'portfolio/ui/Final-Useing-Photos/logo.png' %}" type="image/x-icon">
+    <!--link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link Fullpage.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <!--link hover.css-->
+    <link rel="stylesheet" href="{% static 'portfolio/library/hover.css/css/hover-min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/component.css' %}" />
+    <!--link styleSheet-->
+    <link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}">
+    <title>مکعب | Cupe</title>
+    <script src="{% static 'portfolio/js/modernizr.custom.25376.js' %}"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="intro-video">
+        <iframe src="{% static 'portfolio/vendors/demo.html' %}" frameborder="0"></iframe>
+    </div>
+
+    <div id="perspective" class="perspective effect-laydown">
+        <div class="container-icon">
+            <div class="wrapper">
+                <!--main -->
+                <main>
+                    <!--header-->
+                    <div class="container">
+                        <div id="header">
+                            <button id="showMenu" class="d-block d-xl-none">
+                                    <div class="icon-container" >
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                        <div class="bar3"></div>
+                                    </div>
+                                </button>
+                        </div>
+                    </div>
+                    <!--/header-->
+                    <div id="fullpage">
+                        <!--first slide -->
+                        <section class="section s1 fp-responsive">
+                            <div class="nav-icon   container   ">
+                                <div class="first-logo  ">
+                                    <img src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Up_Left_Side_Logo.png' %}" alt="logo">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <!--first main part-->
+                                    <div class="first-main-part d-flex justify-content-center align-items-center">
+                                        <div class="main-section">
+                                            <div class="main-logo d-flex justify-content-center mb-md-4 mb-xl-4 ">
+                                                <img src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Center_Logo.png' %}" alt="mainLogo">
+                                            </div>
+                                            <div class="first-main-text  text-center col-sm-12 col-md-12 col-lg-12 d-flex flex-column align-items-center">
+                                                <p>طراحی به معنای چگونه کار کردن است </p>
+                                                <p>گروه طراحی - مهندسی مکعب این افتخار را دارد تا در زمینه طراحی سایت و گرافیک با رویکردی خلاق ، منظم و با کیفیت فعالیت کند</p>
+                                                <div class="section-button d-flex justify-content-around flex-column flex-md-row ">
+                                                    <a href="{% url 'porto:web_design' %}" data-menuanchor="firstPage">طراحی سایت </a>
+                                                    <a href="{% url 'porto:graphic_design' %}" class="second-button">طراحی گرافیک</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-container">
+                                <video class="video" autoplay muted loop>
+                                    <source src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Silde1.mp4' %}" >
+                                    </video>
+
+                            </div>
+
+                            <!--/first main part-->
+                        </section>
+                        <!--second main part-->
+                        <section class="section s2 fp-responsive ">
+                            <div class="container">
+                                <div class="logo  ">
+                                    <img src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Up_Left_Side_Logo.png' %}" alt="logo">
+                                </div>
+                                <div class="second-main-part">
+                                    <div class="row">
+                                        <div class="second-main-text col-sm-12 col-md-6 col-lg-6  d-flex align-items-center">
+                                            <div class="text">
+                                                <p>طراحی وب سایت</p>
+                                                <p>شرکتی| فروشگاهی | شخصی</p>
+                                                <p>ما با استفاده از متد روز دنیا در طراحی و توسعه سایت و با خلاقیت ، نظم و کیفت بالا در سبک های شرکتی، فروشگاهی و شخصی در خدمت شما عزیزان هستیم تا تجارت الکترونیکی خود را اغاز کنید
+                                                </p>
+                                                <a href="{% url 'porto:web_design' %}">مشاهده نمونه کار</a>
+                                            </div>
+                                        </div>
+                                        <!--second main picture -->
+                                        <div class="second-main-picture col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+                                            <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-2/Center-Logo.png' %}" alt="com-picture">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/second main part-->
+                        </section>
+                        <!--Third main part-->
+                        <section class="section s3 ">
+                            <div class="container">
+                                <div class="logo  ">
+                                    <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-3/Up-Left-Side-Logo1.png' %}" alt="logo">
+                                </div>
+                                <div class="third-main d-flex justify-content-center align-items-center">
+                                    <div class="border-right d-none d-lg-block"></div>
+                                    <!--post card-->
+                                    <div class="items-container d-flex ">
+                                        <div class="row">
+                                            <div class="container-item d-flex flex-column flex-md-row align-items-end align-items-md-center  justify-content-between col-6 col-md-8  order-1 ">
+                                                <div class="item-1 col-md-6 col-12 col-sm-12 hvr-float">
+                                                    <div class="description-picture d-flex flex-column align-items-center ">
+                                                        <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-3/Personal.png' %}" alt="personal card">
+                                                        <p>طراحی وب سایت شخصی</p>
+                                                    </div>
+                                                </div>
+                                                <div class="item-2   col-md-6 col-12 col-sm-12  hvr-float">
+                                                    <div class="description-picture-second  d-flex flex-column align-items-center">
+                                                        <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-3/Com.png' %}" alt="Com card">
+                                                        <p>طراحی وب سایت شرکتی</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spiction-items col-md-4 col-6 col-sm-6 d-flex align-items-center justify-content-center justify-content-md-center order-0  ">
+                                                <div class="item-3   hvr-float">
+                                                    <div class="description-picture-Third  d-flex flex-column align-items-center">
+                                                        <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-3/Shop.png' %}" alt="Shop card">
+                                                        <p>طراحی وب سایت فروشگاهی</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="border-left  d-none d-lg-block"></div>
+                                </div>
+                            </div>
+                            <!--/Third main part-->
+                        </section>
+                        <!--Fourth main part-->
+                        <section class="section s4 fp-responsive">
+                            <div class="container">
+                                <div class="logo ">
+                                    <img src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Up_Left_Side_Logo.png' %}" alt="logo">
+                                </div>
+                                <div class="Fourth-main-part">
+                                    <div class="row">
+                                        <div class="Fourth-main-text col-sm-12 col-md-6 col-lg-6  d-flex align-items-center">
+                                            <div class="text">
+                                                <p>تولید محتوا</p>
+                                                <p>طراحی گرافیک| موشن گرافیک | تدوین</p>
+                                                <p>از طراحی لوگو تا پست های اینستاگرامی و تیزر های تبلیغاتی ، همه و همه با خلاقیتی بی نظیر و با کیفت عالی در خدمت شماست. زبان هنر تنها زبانی است که همه می فهمند
+                                                </p>
+                                                <a href="{% url 'porto:Content_production' %}">مشاهده نمونه کار</a>
+                                            </div>
+                                        </div>
+                                        <!-- Fourth main picture-->
+                                        <div class="Fourth-main-picture col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+                                            <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-4/Vector Smart Object.png' %}" alt="vector-picture">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Fourth main part-->
+                        </section>
+                        <!--Fifth main part -->
+                        <section class="section s5 fp-responsive">
+                            <div class="container">
+                                <div class="logo  ">
+                                    <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-3/Up-Left-Side-Logo1.png' %}" alt="logo">
+                                </div>
+                                <div class="Fifth-main-part">
+                                    <div class="row">
+                                        <div class="Fifth-main-text col-sm-12 col-md-6 col-lg-6  d-flex align-items-center">
+                                            <div class="text">
+                                                <p>مدیرت شبکه اجتماعی</p>
+                                                <p>راه دیده شدن بهتر - شبکه های اجتماعی</p>
+                                                <p>باافزایش روزافزون شبکه های اجتماعی شما نیز میتوانید تجارت خود را در این فضا داشته باشید. خدمات ما طیف گسترده ایی از شروع یک کسب و کار در شبکه های اجتماعی تا تولید محتوا و بازار یابی در خود جای می دهد
+                                                </p>
+                                                <a href="{% url 'porto:Content_production' %}">اطلاعات بیشتر</a>
+                                            </div>
+                                        </div>
+                                        <!-- Fifth main picture-->
+                                        <div class="Fifth-main-picture col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
+                                            <img src="{% static 'portfolio/ui/Final-Useing-Photos/Slide-5/Vector-Smart-Object.png' %}" alt="com-picture">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Fifth main part-->
+                        </section>
+                        <!-- Sixth main part-->
+                        <section class="section s6 fp-responsive">
+                            <div class="container">
+
+                                <div class="logo">
+                                    <img src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Up_Left_Side_Logo.png' %}" alt="logo">
+                                </div>
+                                <!--Sixth main part-->
+                                <div class="Sixth-main-part d-flex  flex-column align-items-center ">
+                                    <div class="main-logo d-flex justify-content-center ">
+                                        <img src="{% static 'portfolio/ui/Final-Useing-Photos/Silde-1/Center_Logo.png' %}" alt="mainLogo" class="img">
+                                    </div>
+                                    <div class="Sixth-main-text d-flex flex-column text-center justify-content-center align-items-center">
+                                        <p>طراحی به معنای چگونه کار کردن است </p>
+                                        <p>0910-337-1457</p>
+
+                                        <div class="section-button d-flex justify-content-center">
+                                            <a href="#">Telegram</a>
+                                            <a href="#">Instagram</a>
+                                            <a href="#">Twitter</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--/Sixth main part-->
+                        </section>
+                    </div>
+                </main>
+                <!--/main -->
+            </div>
+        </div>
+
+        <footer class="d-none d-lg-block">
+            <div class="footer-container">
+                <div id="infoMenu" class="d-flex justify-content-between align-items-center d-none d-md-flex">
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="items d-flex">
+                            <span><a href="{% url 'porto:web_design' %}">طراحی سایت</a></span>
+                            <span><a href="{% url 'porto:graphic_design' %}">تولید محتوا</a></span>
+                            <span><a href="{% url 'porto:Content_production' %}">مدیریت شبکه اجتماعی</a></span>
+                        </div>
+                        <span><a href="{% url 'porto:about_us' %}">درباره ما </a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- nav container-->
+        <nav class="outer-nav top horizontal d-flex flex-column align-items-center">
+            <a href="#">صفحه اصلی</a>
+            <a href="{% url 'porto:web_design' %}">طراحی سایت</a>
+            <a href="{% url 'porto:graphic_design' %}">طراحی گرافیک</a>
+            <a href="{% url 'porto:Content_production' %}">مدیریت شبکه اجتماعی</a>
+
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="{% static 'portfolio/js/classie.js' %}"></script>
+    <script src="{% static 'portfolio/js/menu.js' %}"></script>
+    <!--script bootstarp-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js " integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k " crossorigin="anonymous "></script>
+    <!--script fullPage.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js" integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ==" crossorigin="anonymous"></script>
+    <!--script Aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <!--script scrollOverflow-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous"></script>
+    <!--css3 by fullpage.js-->
+    <script src="library/Fullpage.js/node_modules/fullpage.js/vendors/easings.js"></script>
+    <!--script gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!--script app -->
+    <script src="{% static 'portfolio/js/app.js' %}"></script>
+</body>
+
+</html>

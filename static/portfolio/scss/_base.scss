@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: iranSans;
+    src: url(../font/IRANSans.ttf);
+}
+
+@font-face {
+    font-family: iranSansmed;
+    src: url(../font/IRANSans_Medium.ttf);
+}
+
+@font-face {
+    font-family: iranSansbold;
+    src: url(../font/IRANSans_Bold.ttf);
+}
+
+iframe {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100vh;
+    animation: slide-out-fwd-center 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 5s both;
+}
+
+.fp-scroller {
+    overflow: visible;
+}
+
+.fp-tableCell {
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100% !important;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #D9B478 !important;
+    font-size: 14px;
+    font-family: iranSans;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer
+}
+
+#fp-nav {
+    z-index: 10 !important;
+}

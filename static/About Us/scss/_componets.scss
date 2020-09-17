@@ -1,0 +1,697 @@
+header {
+    .icon-container {
+        .container {
+            .nav-container {
+                width: 100%;
+                height: 8vh;
+                .nav-icon {
+                    .icon-container {
+                        display: inline-block;
+                        cursor: pointer;
+                        border: solid 1px white;
+                        border-radius: 110%;
+                        padding: 4px 7px;
+                        transform: scale(0.70);
+                        margin-left: -7px;
+                    }
+                    .bar1,
+                    .bar2,
+                    .bar3 {
+                        width: 23px;
+                        height: 2px;
+                        background-color: white;
+                        margin: 6px 0;
+                        transition: 0.4s;
+                    }
+                    .change .bar1 {
+                        transform: rotate(-46deg) translate(-4px, 3px);
+                    }
+                    .change .bar2 {
+                        opacity: 0;
+                    }
+                    .change .bar3 {
+                        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                        transform: rotate(45deg) translate(-8px, -8px);
+                    }
+                    #trigger-overlay {
+                        background: none;
+                        border: none;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+        .main-header {
+            width: 100%;
+            height: 77vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .header-title {
+                    border: solid 0.5px white;
+                    display: block;
+                    width: 50%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p:nth-child(1) {
+                        color: white;
+                        font-family: iranSansbold;
+                        font-size: 40px;
+                    }
+                    p:nth-child(2) {
+                        span {
+                            font-size: 40px;
+                            color: #FFAA00;
+                            font-family: iranSansbold;
+                        }
+                        font-size: 40px;
+                        color: white;
+                        font-family: iranSansbold;
+                    }
+                }
+                .header-items {
+                    width: 100%;
+                    height: 15%;
+                    direction: ltr;
+                    a {
+                        color: white;
+                        transition-duration: 0.5s;
+                        &:hover {
+                            text-decoration: none;
+                            color: #CEAB73;
+                        }
+                    }
+                    p:nth-child(1) {
+                        font-size: 15px;
+                        color: white;
+                        border-right: solid 2px #CEAB73;
+                        padding: 0px 10px;
+                    }
+                    p:nth-child(2) {
+                        font-size: 15px;
+                        color: white;
+                        border-right: solid 2px #CEAB73;
+                        padding: 0px 10px;
+                    }
+                    p:nth-child(3) {
+                        font-size: 15px;
+                        color: white;
+                        padding: 0px 10px;
+                    }
+                }
+                .arrow-down {
+                    width: 100%;
+                    height: 10vh;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    .material-icons {
+                        animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse backwards;
+                        color: white;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .back-button {
+            p {
+                margin-bottom: 0.5rem;
+                margin-right: 10px;
+                a {
+                    color: white;
+                    font-family: iranSans;
+                    transition-duration: 0.5s;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .material-icons {
+                color: #CEAB73;
+            }
+            &:hover .material-icons {
+                animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+        }
+    }
+}
+
+main {
+    .about-container {
+        .container {
+            max-width: 1140 !important;
+            .about {
+                .line-container {
+                    width: 100%;
+                    height: 12vh;
+                    display: flex;
+                    justify-content: center;
+                    .line {
+                        width: 1px;
+                        height: 100%;
+                        background-color: #CEAB73;
+                    }
+                }
+                .about-description {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 5rem;
+                    .about-title {
+                        p:nth-child(2) {
+                            text-align: center;
+                            max-width: 600px;
+                            color: white;
+                            font-size: 17px;
+                            font-family: iranSans;
+                            line-height: 35px;
+                        }
+                        font-family: iranSansmed;
+                        font-size: 20px;
+                        color: #CEAB73;
+                    }
+                }
+                .about-items {
+                    width: 100%;
+                    height: auto;
+                    .row {
+                        .Graphics {
+                            margin-bottom: 5rem;
+                            .Icon-Graphics {
+                                .material-icons {
+                                    color: #CEAB73;
+                                }
+                            }
+                            p {
+                                color: white;
+                                margin-top: 10px;
+                                font-family: iranSansmed;
+                            }
+                            .more-button {
+                                p {
+                                    margin-bottom: 0.5rem;
+                                    margin-right: 10px;
+                                    a {
+                                        color: white;
+                                        font-family: iranSans;
+                                        transition-duration: 0.5s;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                                .material-icons {
+                                    color: #CEAB73;
+                                    cursor: pointer;
+                                }
+                                &:hover .material-icons {
+                                    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                            }
+                        }
+                        .Web {
+                            margin-bottom: 5rem;
+                            .Icon-web {
+                                .material-icons {
+                                    color: #CEAB73;
+                                    cursor: pointer;
+                                }
+                            }
+                            p {
+                                color: white;
+                                margin-top: 10px;
+                                font-family: iranSansmed;
+                            }
+                            .more-button {
+                                p {
+                                    margin-bottom: 0.5rem;
+                                    margin-right: 10px;
+                                    a {
+                                        color: white;
+                                        font-family: iranSans;
+                                        transition-duration: 0.5s;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                                .material-icons {
+                                    color: #CEAB73;
+                                    cursor: pointer;
+                                }
+                                &:hover .material-icons {
+                                    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                            }
+                        }
+                        .Social {
+                            margin-bottom: 5rem;
+                            .Icon-Social {
+                                .material-icons {
+                                    color: #CEAB73;
+                                }
+                            }
+                            p {
+                                color: white;
+                                margin-top: 10px;
+                                font-family: iranSansmed;
+                            }
+                            .more-button {
+                                p {
+                                    margin-bottom: 0.5rem;
+                                    margin-right: 10px;
+                                    a {
+                                        color: white;
+                                        font-family: iranSans;
+                                        transition-duration: 0.5s;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                                .material-icons {
+                                    color: #CEAB73;
+                                    cursor: pointer;
+                                }
+                                &:hover .material-icons {
+                                    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Team-container {
+        .container {
+            max-width: 1140 !important;
+            .Team {
+                .line-container {
+                    width: 100%;
+                    height: 12vh;
+                    display: flex;
+                    justify-content: center;
+                    .line {
+                        width: 1px;
+                        height: 100%;
+                        background-color: #CEAB73;
+                    }
+                }
+                .Team-description {
+                    width: 100%;
+                    height: auto;
+                    .Team-title {
+                        p:nth-child(2) {
+                            text-align: center;
+                            max-width: 600px;
+                            color: white;
+                            font-size: 30px;
+                            font-family: iranSansmed;
+                            line-height: 35px;
+                        }
+                        font-family: iranSansmed;
+                        font-size: 20px;
+                        color: #CEAB73;
+                    }
+                }
+                .Team-items {
+                    margin-top: 3rem;
+                    .About-Team {
+                        height: 308px;
+                        border-right: solid 1px;
+                        border-bottom: solid 1px;
+                        .Description {
+                            .col-lg-8 {
+                                -ms-flex: 0 0 66.666667%;
+                                flex: 0 0 66.666667%;
+                                max-width: 66.666667%;
+                            }
+                            margin-bottom: 1rem;
+                            p {
+                                color: white;
+                                text-align: justify;
+                                font-size: 12px;
+                                font-weight: 100;
+                                font-family: iranSans;
+                                line-height: 45px;
+                            }
+                        }
+                        .Profile {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-top: 12px;
+                            .photo {
+                                background: white;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 50%;
+                                padding: 10px 9px;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .img {
+                                border-left: solid 2px #CEAB73;
+                                border-top: solid 2px #CEAB73;
+                                padding: 23px;
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+                                top: -2.9rem;
+                            }
+                            .title {
+                                transform: rotate(-90deg);
+                                margin-top: 26px;
+                                width: 61px;
+                                p:nth-child(2) {
+                                    font-size: 12px;
+                                    color: white;
+                                    font-family: iranSans;
+                                }
+                                p:nth-child(1) {
+                                    color: #CEAB73;
+                                    margin-bottom: 0;
+                                    font-size: 15px;
+                                    font-family: iranSans;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Graphics-Team {
+                    height: 308px;
+                    border-right: solid 1px;
+                    border-bottom: solid 1px;
+                    .About-Graphics {
+                        width: 100%;
+                    }
+                    .photo-Graphics {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .Graphics-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .Front-Team {
+                    height: 308px;
+                    border-right: solid 1px;
+                    border-bottom: solid 1px;
+                    .About-Front {
+                        width: 100%;
+                    }
+                    .photo-Front {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .Front-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .Back-Team {
+                    height: 308px;
+                    border-bottom: solid 1px;
+                    .About-Back {
+                        width: 100%;
+                    }
+                    .photo-Back {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .Back-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .Word-Team {
+                    height: 308px;
+                    border-left: solid 1px;
+                    .About-Word {
+                        width: 100%;
+                    }
+                    .photo-Word {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    .Word-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .More-Team-1 {
+                    height: 308px;
+                    border-left: solid 1px;
+                    .About-More {
+                        width: 100%;
+                    }
+                    .photo-More {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .More-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .More-Team-2 {
+                    height: 308px;
+                    border-left: solid 1px;
+                    .About-More {
+                        width: 100%;
+                    }
+                    .photo-More {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .More-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .More-Team-3 {
+                    height: 308px;
+                    border-left: none;
+                    .About-More {
+                        width: 100%;
+                    }
+                    .photo-More {
+                        background: white;
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .More-name {
+                        margin-top: 20px;
+                        text-align: center;
+                        p {
+                            margin-bottom: 0;
+                            font-family: iranSans;
+                        }
+                        p:nth-child(1) {
+                            color: #CEAB73;
+                        }
+                        p:nth-child(2) {
+                            color: white;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Contact-US {
+        .container {
+            .Contact {
+                .line-container {
+                    width: 100%;
+                    height: 12vh;
+                    display: flex;
+                    justify-content: center;
+                    .line {
+                        width: 1px;
+                        height: 100%;
+                        background-color: #CEAB73;
+                    }
+                }
+                .Contact-description {
+                    width: 100%;
+                    height: auto;
+                    .Contact-title {
+                        p:nth-child(2) {
+                            text-align: center;
+                            max-width: 600px;
+                            color: white;
+                            font-size: 25px;
+                            font-family: iranSansmed;
+                            line-height: 35px;
+                        }
+                        font-family: iranSansmed;
+                        font-size: 20px;
+                        color: #CEAB73;
+                    }
+                }
+                .Contact-container {
+                    .row {
+                        .Contact-form {
+                            margin-bottom: 2rem;
+                            margin-top: 2rem;
+                            .form-group {
+                                input {
+                                    background: none;
+                                    border: none;
+                                    border-bottom: solid 2px #CEAB73;
+                                    border-radius: 1px;
+                                    color: white;
+                                    font-family: iranSans;
+                                    font-size: 15px;
+                                    width: 100%;
+                                    &:focus {
+                                        outline: none;
+                                        box-shadow: none;
+                                    }
+                                }
+                                textarea {
+                                    background: transparent;
+                                    border: solid 1px #CEAB73;
+                                    color: white;
+                                    font-family: iranSans;
+                                    font-size: 15px;
+                                    width: 100%;
+                                }
+                            }
+                            button {
+                                display: block;
+                                width: 100%;
+                                background: transparent;
+                                border: solid 1px #CEAB73;
+                                transition-duration: 0.5s;
+                                font-family: iranSans;
+                                &:hover {
+                                    background: #CEAB73;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

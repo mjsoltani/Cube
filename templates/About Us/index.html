@@ -1,0 +1,377 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره ما</title>
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{% static 'About Us/images/logo.png' %}" type="image/x-icon">
+    <!--link material icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--icon responsiv-->
+    <link rel="stylesheet" href="{% static 'About Us/css/style8.css' %}">
+    <link rel="stylesheet" href="{% static 'About Us/css/normalize.css' %}">
+    <script src="{% static '/About Us/js/modernizr.custom.js' %}"></script>
+    <!--AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link main.css-->
+    <link rel="stylesheet" href="{% static 'About Us/css/main.css' %}">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="icon-container">
+            <div class="container">
+                <!--Nav icon Responsive-->
+                <div class="nav-container d-flex align-items-end justify-content-end">
+                    <div class="nav-icon d-block d-lg-none ">
+                        <button id="trigger-overlay">
+                                <div class="icon-container">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                        </button>
+                    </div>
+                    <!--/Nav icon Responsive-->
+                </div>
+                <!--Main Header-->
+                <div class="main-header">
+                    <div class="header">
+                        <!--Header Title-->
+                        <div class="header-title">
+                            <p id="paragraph1">بهترین باش ...</p>
+                            <p id="paragraph2"><span>حرفه ای</span> باش :) </p>
+                        </div>
+                        <!--/Header Title-->
+                        <div class="header-items d-flex align-items-center justify-content-center">
+                            <p><a href="#">DESING</a></p>
+                            <p><a href="#">STARTEGY</a></p>
+                            <p><a href="#">BRANDING</a></p>
+                        </div>
+                        <!--Arrow Down button-->
+                        <div class="arrow-down">
+                            <a href="#about-container">
+                                <span class="material-icons">
+                                    keyboard_arrow_down
+                                </span>
+                            </a>
+                        </div>
+                        <!--/Arrow Down button-->
+                    </div>
+                    <!--Main Header-->
+                </div>
+                <!--Back Button-->
+                <div class="back-button d-lg-flex align-items-center d-none">
+                    <span class="material-icons">
+                        trending_flat
+                        </span>
+                    <p><a href="{% url 'porto:portfolio' %}">بازگشت به خانه</a></p>
+                </div>
+                <!--/Back Button-->
+            </div>
+            <!--/header-->
+    </header>
+    <!--Main Page-->
+    <main>
+        <!--About Us-->
+        <section class="about-container" id="about-container">
+            <div class="container">
+                <div class="about">
+                    <!--Line-->
+                    <div class="line-container d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="line"></div>
+                        <!--/Line-->
+                    </div>
+                    <!--About Description-->
+                    <div class="about-description d-flex flex-column align-items-center">
+                        <div class="about-title d-flex flex-column align-items-center " data-aos="zoom-in">
+                            <p>درباره ما</p>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12">تیم فنی مهندسی مکعب این افتخار را دارد که شما را درگروه طراحی - مهندسی مکعب این افتخار را دارد تا در زمینه طراحی سایت و گرافیک با رویکردی خلاق ، منظم و با کیفیت فعالیت کند </p>
+                        </div>
+                        <!--/About Description-->
+                    </div>
+                    <!--About Items-->
+                    <div class="about-items">
+                        <div class="row">
+                            <!--Graphics Items-->
+                            <div class="Graphics col-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column align-items-center" data-aos="flip-right">
+                                <div class="Graphics-container  d-flex flex-column align-items-center align-items-lg-end">
+                                    <div class="Icon-Graphics ">
+                                        <span class="material-icons ">
+                                                create
+                                        </span>
+                                    </div>
+                                    <p>طراحی گرافیک</p>
+                                    <div class="more-button d-flex align-items-center ">
+                                        <span class="material-icons ">
+                                                trending_flat
+                                        </span>
+                                        <p><a href="{% url 'porto:graphic_design' %}">بیشتر</a></p>
+                                    </div>
+                                </div>
+                                <!--/Graphics Items-->
+                            </div>
+                            <!--Web Items-->
+                            <div class="Web col-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column align-items-center " data-aos="flip-up">
+                                <div class="Web-container  d-flex flex-column align-items-center align-items-lg-end">
+                                    <div class="Icon-web ">
+                                        <span class="material-icons ">
+                                        code
+                                        </span>
+                                    </div>
+                                    <p>طراحی وب سایت</p>
+                                    <div class="more-button d-flex align-items-center ">
+                                        <span class="material-icons ">
+                                            trending_flat
+                                            </span>
+                                        <p><a href="{% url 'porto:web_design' %}">بیشتر</a></p>
+                                    </div>
+                                </div>
+                                <!--/Web Items-->
+                            </div>
+                            <!--Social Items-->
+                            <div class="Social col-12 col-sm-6 col-md-6 col-lg-4 d-flex flex-column align-items-center " data-aos="flip-left">
+                                <div class="Social-container d-flex flex-column align-items-center align-items-lg-end">
+                                    <div class="Icon-Social ">
+                                        <span class="material-icons ">
+                                        article
+                                        </span>
+                                    </div>
+                                    <p>تولید محتوا</p>
+                                    <div class="more-button d-flex align-items-center ">
+                                        <span class="material-icons ">
+                                            trending_flat
+                                        </span>
+                                        <p><a href="{% url 'porto:Content_production' %}">بیشتر</a></p>
+                                    </div>
+                                </div>
+                                <!--/Social Items-->
+                            </div>
+                        </div>
+                        <!--About Items-->
+                    </div>
+                </div>
+            </div>
+            <!--/About Us-->
+        </section>
+        <section class="Team-container">
+            <div class="container">
+                <div class="Team">
+                    <!--Line-->
+                    <div class="line-container d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="line"></div>
+                        <!--/Line-->
+                    </div>
+                    <!--Team Description-->
+                    <div class="Team-description d-flex flex-column align-items-center">
+                        <div class="Team-title d-flex flex-column align-items-center " data-aos="zoom-in">
+                            <p>تیم ما</p>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12">تیم شگفت انگیز ما ...</p>
+                        </div>
+                        <!--/Team Description-->
+                    </div>
+                    <!--Teams Item-->
+                    <div class="Team-items">
+                        <div class="row">
+                            <!--Back Team-->
+                            <div class="Back-Team  col-12 col-sm-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="About-Back d-flex flex-column align-items-center">
+                                    <div class="photo-Back">
+                                        <img src="{% static 'About Us/images/javad.jpg' %}" alt="Back-end photo">
+                                    </div>
+                                    <div class="Back-name">
+                                        <p>محمد جواد سلطانی</p>
+                                        <p>توسعه دهنده بک اند</p>
+                                    </div>
+                                </div>
+                                <!--/Back Team-->
+                            </div>
+                            <!--Front Team-->
+                            <div class="Front-Team  col-12 col-sm-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="About-Front d-flex flex-column align-items-center">
+                                    <div class="photo-Front">
+                                        <img src="{% static 'About Us/images/mousavi.jpg' %}" alt="front-end phpto">
+                                    </div>
+                                    <div class="Front-name">
+                                        <p>امیرحسین موسوی</p>
+                                        <p>توسعه دهنده فرانت اند</p>
+                                    </div>
+                                </div>
+                                <!--/Front Team-->
+                            </div>
+                            <!--Graphics Team-->
+                            <div class="Graphics-Team  col-12 col-sm-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="About-Graphics d-flex flex-column align-items-center">
+                                    <div class="photo-Graphics">
+                                        <img src="{% static 'About Us/images/mohamady.jpg' %}" alt="Graphics photo">
+                                    </div>
+                                    <div class="Graphics-name">
+                                        <p>علی محمدی</p>
+                                        <p>طراح گرافیک</p>
+                                    </div>
+                                </div>
+                                <!--/Graphics Team-->
+                            </div>
+                            <!--About Team-->
+                            <div class="About-Team col-12 col-sm-12 col-md-6 col-lg-3 d-lg-flex d-none" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="Description col-lg-9">
+                                    <p class="col-12 col-sm-12 col-md-12 col-lg-12">گروه فنی مهندسی مکعب این افتخار را دارد تا در راستای ارتقا کسب و کار و تجارت الکترونیکی شما ،در زمینه های طراحی سایت و گرافیک با رویکردی خلاق منظم و با کیفیت فعالیت کند.
+                                    </p>
+                                </div>
+                                <div class="Profile col-lg-3">
+                                    <div class="photo">
+                                        <img src="{% static 'About Us/images/logo.png' %}" alt="mokab">
+                                        <div class="img"></div>
+                                    </div>
+                                    <div class="title">
+                                        <p>مکعب</p>
+                                        <p>گروه طراحی</p>
+                                    </div>
+                                </div>
+                                <!--/About Team-->
+                            </div>
+                            <!--Word Team-->
+                            <div class="Word-Team  col-12 col-sm-12 col-md-6 col-lg-3 d-flex flex-column justify-content-center " data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="About-Word d-flex flex-column align-items-center">
+                                    <div class="photo-Word">
+                                        <img src="{% static 'About Us/images/undraw_profile_pic_ic5t.svg' %}" alt="svg">
+                                    </div>
+                                    <div class="Word-name">
+                                        <p>امیرحسین لازمی</p>
+                                        <p>توسعه دهنده وردپرس</p>
+                                    </div>
+                                </div>
+                                <!--/Word Team-->
+                            </div>
+                            <!--More Team-->
+                            <div class="More-Team-1  col-12 col-sm-12 col-md-6 col-lg-3  d-flex flex-column justify-content-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="About-More d-flex flex-column align-items-center">
+                                    <div class="photo-More">
+                                        <img src="{% static 'About Us/images/undraw_profile_pic_ic5t.svg' %}" alt="svg">
+                                    </div>
+                                    <div class="More-name">
+                                        <p>جای شما خالیست </p>
+                                        <p>به ما پیام بدهید</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="More-Team-2  col-12 col-sm-12 col-md-6 col-lg-3  d-flex flex-column justify-content-center" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="About-More d-flex flex-column align-items-center">
+                                    <div class="photo-More">
+                                        <img src="{% static 'About Us/images/undraw_profile_pic_ic5t.svg' %}" alt="svg">
+                                    </div>
+                                    <div class="More-name">
+                                        <p>جای شما خالیست </p>
+                                        <p>به ما پیام بدهید</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="More-Team-3  col-12 col-sm-12 col-md-6 col-lg-3  d-flex flex-column justify-content-center mb-0 mb-lg-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="About-More d-flex flex-column align-items-center">
+                                    <div class="photo-More">
+                                        <img src="{% static 'About Us/images/undraw_profile_pic_ic5t.svg' %}" alt="svg">
+                                    </div>
+                                    <div class="More-name">
+                                        <p>جای شما خالیست </p>
+                                        <p>به ما پیام بدهید</p>
+                                    </div>
+                                </div>
+                                <!--More Team-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Us-->
+    <form action="{% url 'porto:about_us' %}" method="post">
+        {% csrf_token %}
+        <section class="Contact-US">
+            <div class="container">
+                <div class="Contact">
+                    <!--Line-->
+                    <div class="line-container d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="line"></div>
+                        <!--/Line-->
+                    </div>
+
+                    <!--Contact Description-->
+                    <div class="Contact-description d-flex flex-column align-items-center">
+                        <div class="Contact-title d-flex flex-column align-items-center " data-aos="zoom-in">
+                            <p>ارتباط با ما</p>
+                            <p class="col-12 col-sm-12 col-md-12 col-lg-12">با ما در ارتباط باشید...</p>
+                        </div>
+                        <!--/Contact Description-->
+                    </div>
+                    <div class="Contact-container">
+                        <div class="row">
+                            <div class="Contact-form col-12 col-sm-12 col-md-6 col-lg-5 order-1 order-md-0" data-aos="zoom-in">
+                                <div class="form-group">
+                                    <label for="first-name">نام</label>
+                                    <input type="text" name="first-name" id="firs-name" required>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">ایمیل</label>
+                                    <input type="email" name="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tel">شماره تماس</label>
+                                    <input type="tel" name="tell" id="tel" class="form-control" required>
+                                </div>
+                                <div class="form-group d-flex flex-column">
+                                    <label for="description">توضیحات</label>
+                                    <textarea name="description" id="description" cols="10" rows="10"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">تایید</button>
+                            </div>
+                            <div class="Map col-12 col-sm-12 col-md-6 col-lg-7 order-0 order-md-1" data-aos="zoom-in">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3389.4727484559025!2d54.36335568513161!3d31.839348581265266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fa6194ccdbc6f41%3A0x555f9c4d3a5c9dff!2z2LPYp9iu2KrZhdin2YYg2YHZhtin2YjYsduMINiv2KfZhti02q_Yp9mHINuM2LLYrw!5e0!3m2!1sfa!2s!4v1599491266807!5m2!1sfa!2s"
+                                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Contact Us-->
+    </form>
+        </section>
+    </main>
+    <!--Main Page-->
+    </div>
+    <div class="overlay overlay-contentscale ">
+        <!--navbar responsive-->
+        <button type="button " class="overlay-close ">Close</button>
+        <nav>
+            <ul>
+                <li><a href="{% url 'porto:portfolio' %}">صفحه اصلی </a></li>
+                <li><a href="{% url 'porto:about_us' %}">درباره ما</a></li>
+                <li><a href="{% url 'porto:WS_WDT' %}">نمونه کار ها</a></li>
+            </ul>
+        </nav>
+        <!--/navbar responsive-->
+    </div>
+
+
+    <!--script bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js " integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k " crossorigin="anonymous "></script>
+    <!--script icon responsiv-->
+    <script src="{% static 'About Us/js/classie.js' %} "></script>
+    <script src="{% static 'About Us/js/demo7.js' %} "></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js " integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin=" anonymous "></script>
+    <!--script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <!--script app.js-->
+    <script src="{% static 'About Us/js/app.js' %}"></script>
+</body>
+
+</html>

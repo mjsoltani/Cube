@@ -1,0 +1,662 @@
+@font-face {
+  font-family: iranSans;
+  src: url(../font/IRANSans.ttf);
+}
+
+@font-face {
+  font-family: iranSansmed;
+  src: url(../font/IRANSans_Medium.ttf);
+}
+
+@font-face {
+  font-family: iranSansbold;
+  src: url(../font/IRANSans_Bold.ttf);
+}
+
+button {
+  cursor: pointer;
+}
+
+main .main .container .header-container {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+}
+
+main .main .container .header-container .header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 30px;
+}
+
+main .main .container .header-container .header .header-logo img {
+  height: 35px;
+}
+
+main .main .container .header-container .header .nav-button .header-button button {
+  display: block;
+  width: 200px;
+  height: 55px;
+  border: none;
+  background-color: white;
+}
+
+main .main .container .header-container .header .nav-button .header-button button a {
+  color: black;
+  font-family: iranSans;
+  display: block;
+  width: 200px;
+  height: 55px;
+  padding: 12px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .main .container .header-container .header .nav-button .header-button button a:hover {
+  background-color: #d9b478;
+  color: white;
+}
+
+main .main .container .header-container .header .nav-button .header-icon {
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+main .main .container .header-container .header .nav-button .header-icon .icon-container {
+  display: inline-block;
+  cursor: pointer;
+  border: solid 1px white;
+  border-radius: 110%;
+  padding: 4px 7px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+main .main .container .header-container .header .nav-button .header-icon .bar1,
+main .main .container .header-container .header .nav-button .header-icon .bar2,
+main .main .container .header-container .header .nav-button .header-icon .bar3 {
+  width: 23px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .main .container .header-container .header .nav-button .header-icon .change .bar1 {
+  -webkit-transform: rotate(-46deg) translate(-4px, 3px);
+          transform: rotate(-46deg) translate(-4px, 3px);
+}
+
+main .main .container .header-container .header .nav-button .header-icon .change .bar2 {
+  opacity: 0;
+}
+
+main .main .container .header-container .header .nav-button .header-icon .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+main .main .container .header-container .header .nav-button .header-icon #trigger-overlay {
+  background: none;
+  border: none;
+}
+
+main .main .container .header-container .header .nav-button .header-icon #trigger-overlay:focus {
+  outline: none;
+}
+
+main .main .container .main-text .text-container .text p:nth-child(1) {
+  color: white;
+  font-family: iranSansbold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+main .main .container .main-text .text-container .text p:nth-child(2) {
+  color: white;
+  font-family: iranSans;
+  font-size: 27px;
+  text-align: center;
+}
+
+main .main .container .main-text .text-container .text p:nth-child(3) {
+  color: white;
+  font-family: iranSans;
+  line-height: 35px;
+  text-align: justify;
+  font-size: 19px;
+}
+
+main .main .container .main-text .text-container .background-image {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  background: white;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+main .main .container .main-text .text-container .background-image img {
+  width: 100%;
+  height: auto;
+}
+
+main .main .container .main-text .text-container .more-button {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+main .main .container .main-text .text-container .more-button .container {
+  padding: 0;
+}
+
+main .main .container .main-text .text-container .more-button button {
+  display: block;
+  width: 70%;
+  height: 50px;
+  border: none;
+  background-color: white;
+}
+
+main .main .container .main-text .text-container .more-button button a {
+  color: black;
+  font-family: iranSans;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 9px;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .main .container .main-text .text-container .more-button button a:hover {
+  background-color: #d9b478;
+  color: white;
+}
+
+footer .footer-container {
+  width: 50%;
+  height: 100%;
+}
+
+footer .footer-container .footer-text {
+  position: relative;
+  top: 4rem;
+  margin-right: 60px;
+}
+
+footer .footer-container .footer-text p:nth-child(1) {
+  font-family: iranSansmed;
+  font-size: 25px;
+}
+
+footer .footer-container .footer-text p:nth-child(2) {
+  font-family: iranSansbold;
+  max-width: 277px;
+  font-size: 30px;
+  text-align: justify;
+}
+
+footer .footer-container .footer-button {
+  margin-top: 78px;
+  margin-bottom: 90px;
+}
+
+footer .footer-container .footer-button button {
+  width: 550px !important;
+  height: 50px;
+  background: #282828;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-container .footer-button button a {
+  color: white;
+  font-family: iranSans;
+  text-decoration: none;
+  display: block;
+  width: 550px !important;
+  height: 50px;
+  padding: 12px !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+footer .footer-container .footer-button button a:hover {
+  background-color: #d9b478;
+  color: white;
+}
+
+footer .footer-container .footer-button p {
+  font-size: 25px !important;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  direction: rtl;
+}
+
+main {
+  background-image: url(../image/P4_Cube_page-2.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: black;
+  opacity: 0.9;
+}
+
+main .container {
+  max-width: 1400px !important;
+}
+
+main .main-text .text-container {
+  position: relative;
+  margin-top: 135px;
+}
+
+main a:focus {
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  height: 770px;
+  background-image: url(../image/Contact.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-container {
+    width: 50%;
+    height: 100%;
+  }
+  footer .footer-container .footer-text {
+    position: relative;
+    margin-top: auto;
+    margin-right: 60px;
+  }
+  footer .footer-container .footer-text p:nth-child(1) {
+    font-family: iranSansmed;
+    font-size: 25px;
+  }
+  footer .footer-container .footer-text p:nth-child(2) {
+    font-family: iranSansbold;
+    max-width: 277px;
+    font-size: 30px;
+    text-align: justify;
+  }
+  footer .footer-container .footer-button {
+    margin-top: 78px;
+    margin-bottom: 90px;
+  }
+  footer .footer-container .footer-button button {
+    width: 100% !important;
+    height: 50px;
+    background: #282828;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-container .footer-button button a {
+    color: white;
+    font-family: iranSans;
+    text-decoration: none;
+    display: block;
+    width: 550px !important;
+    height: 50px;
+    padding: 12px !important;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  footer .footer-container .footer-button button a:hover {
+    background-color: #d9b478;
+    color: white;
+  }
+  footer .footer-container .footer-button p {
+    font-size: 25px !important;
+    margin-top: 50px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    height: auto;
+  }
+  main .main .container .header-container .header {
+    top: 20px !important;
+  }
+  main .main .container .header-container .header .header-logo img {
+    height: 30px;
+  }
+  main .main .container .main-text .text-container {
+    margin-top: 100px;
+  }
+  main .main .container .main-text .text-container .text p:nth-child(1) {
+    color: white;
+    font-family: iranSansbold;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  main .main .container .main-text .text-container .text P:nth-child(2) {
+    color: white;
+    font-family: iranSans;
+    font-size: 24px;
+  }
+  main .main .container .main-text .text-container .text p:nth-child(3) {
+    font-size: 17px;
+  }
+  main .main .container .main-text .text-container .more-button button {
+    width: 100%;
+  }
+  main .main .container .main-text .text-container .more-button button a {
+    width: 100%;
+  }
+  footer {
+    width: 100% !important;
+    background-image: url(../image/background.svg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100% !important;
+  }
+  footer .container {
+    max-width: 1400px !important;
+  }
+  footer .footer-container {
+    width: 100% !important;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-container .footer-text {
+    top: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 93px;
+    margin-right: 0;
+    width: 100%;
+  }
+  footer .footer-container .footer-text p:nth-child(1) {
+    font-family: iranSansmed;
+    font-size: 25px;
+    color: white;
+  }
+  footer .footer-container .footer-text p:nth-child(2) {
+    font-family: iranSansbold;
+    max-width: 277px;
+    font-size: 25px;
+    text-align: center;
+    max-width: 350px !important;
+    color: white;
+  }
+  footer .footer-container .footer-button {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-container .footer-button button {
+    width: 100% !important;
+    height: 50px;
+    background: white;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-container .footer-button button a {
+    color: black;
+    font-family: iranSans;
+    text-decoration: none;
+    display: block;
+    width: 100% !important;
+    height: 50px;
+    padding: 8px;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  footer .footer-container .footer-button button a:hover {
+    background-color: #d9b478;
+    color: white;
+  }
+  footer .footer-container .footer-button p {
+    font-size: 25px !important;
+    margin-top: 50px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    height: auto !important;
+  }
+  main .main .container .header-container .header {
+    top: 30px !important;
+  }
+  main .main .container .header-container .header .header-logo img {
+    height: 30px;
+  }
+  main .main .container .main-text .text-container {
+    margin-top: 100px;
+  }
+  main .main .container .main-text .text-container .text p:nth-child(1) {
+    color: white;
+    font-family: iranSansbold;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  main .main .container .main-text .text-container .text P:nth-child(2) {
+    color: white;
+    font-family: iranSans;
+    font-size: 24px;
+  }
+  main .main .container .main-text .text-container .text p:nth-child(3) {
+    font-size: 17px;
+    text-align: justify !important;
+  }
+  main .main .container .main-text .text-container .more-button button {
+    width: 100%;
+  }
+  main .main .container .main-text .text-container .more-button button a {
+    width: 100%;
+  }
+  main .main .container .main-text .text-container .background-image {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background: white;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+  }
+  footer {
+    width: 100% !important;
+    background-image: url(../image/background.svg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100% !important;
+  }
+  footer .footer-container {
+    width: 100% !important;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-container .footer-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-top: 92px;
+    margin-right: 0;
+    width: 100%;
+  }
+  footer .footer-container .footer-text p:nth-child(1) {
+    font-family: iranSansmed;
+    font-size: 25px;
+    color: white;
+  }
+  footer .footer-container .footer-text p:nth-child(2) {
+    font-family: iranSansbold;
+    max-width: 277px;
+    font-size: 25px;
+    text-align: center;
+    max-width: 350px !important;
+    color: white;
+  }
+  footer .footer-container .footer-button {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-container .footer-button button {
+    width: 100% !important;
+    height: 50px;
+    background: white;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-container .footer-button button a {
+    color: black;
+    font-family: iranSans;
+    text-decoration: none;
+    display: block;
+    width: 100% !important;
+    height: 50px;
+    padding: 9px;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  footer .footer-container .footer-button button a:hover {
+    background-color: #d9b478;
+    color: white;
+  }
+  footer .footer-container .footer-button p {
+    font-size: 25px !important;
+    margin-top: 50px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 420px) {
+  .header .header-logo img {
+    height: 30px;
+  }
+  main {
+    height: auto !important;
+  }
+  main .text p:nth-child(1) {
+    color: white;
+    font-family: iranSansbold;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  main .text P:nth-child(2) {
+    color: white;
+    font-family: iranSans;
+    font-size: 24px;
+  }
+  main .text p:nth-child(3) {
+    font-size: 17px;
+    text-align: justify !important;
+  }
+  .more-button {
+    margin-bottom: 24rem;
+  }
+  .more-button button {
+    width: 100%;
+  }
+  .more-button button a {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

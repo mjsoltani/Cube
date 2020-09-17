@@ -1,0 +1,1552 @@
+@font-face {
+  font-family: iranSans;
+  src: url(../font/IRANSans.ttf);
+}
+
+@font-face {
+  font-family: iranSansmed;
+  src: url(../font/IRANSans_Medium.ttf);
+}
+
+@font-face {
+  font-family: iranSansbold;
+  src: url(../font/IRANSans_Bold.ttf);
+}
+
+header .icon-container .container .nav-container {
+  width: 100%;
+  height: 8vh;
+}
+
+header .icon-container .container .nav-container .nav-icon .icon-container {
+  display: inline-block;
+  cursor: pointer;
+  border: solid 1px white;
+  border-radius: 110%;
+  padding: 4px 7px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin-left: -7px;
+}
+
+header .icon-container .container .nav-container .nav-icon .bar1,
+header .icon-container .container .nav-container .nav-icon .bar2,
+header .icon-container .container .nav-container .nav-icon .bar3 {
+  width: 23px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+header .icon-container .container .nav-container .nav-icon .change .bar1 {
+  -webkit-transform: rotate(-46deg) translate(-4px, 3px);
+          transform: rotate(-46deg) translate(-4px, 3px);
+}
+
+header .icon-container .container .nav-container .nav-icon .change .bar2 {
+  opacity: 0;
+}
+
+header .icon-container .container .nav-container .nav-icon .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .icon-container .container .nav-container .nav-icon #trigger-overlay {
+  background: none;
+  border: none;
+}
+
+header .icon-container .container .nav-container .nav-icon #trigger-overlay:focus {
+  outline: none;
+}
+
+header .icon-container .main-header {
+  width: 100%;
+  height: 77vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .icon-container .main-header .header {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .icon-container .main-header .header .header-title {
+  border: solid 0.5px white;
+  display: block;
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .icon-container .main-header .header .header-title p:nth-child(1) {
+  color: white;
+  font-family: iranSansbold;
+  font-size: 40px;
+}
+
+header .icon-container .main-header .header .header-title p:nth-child(2) {
+  font-size: 40px;
+  color: white;
+  font-family: iranSansbold;
+}
+
+header .icon-container .main-header .header .header-title p:nth-child(2) span {
+  font-size: 40px;
+  color: #FFAA00;
+  font-family: iranSansbold;
+}
+
+header .icon-container .main-header .header .header-items {
+  width: 100%;
+  height: 15%;
+  direction: ltr;
+}
+
+header .icon-container .main-header .header .header-items a {
+  color: white;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header .icon-container .main-header .header .header-items a:hover {
+  text-decoration: none;
+  color: #CEAB73;
+}
+
+header .icon-container .main-header .header .header-items p:nth-child(1) {
+  font-size: 15px;
+  color: white;
+  border-right: solid 2px #CEAB73;
+  padding: 0px 10px;
+}
+
+header .icon-container .main-header .header .header-items p:nth-child(2) {
+  font-size: 15px;
+  color: white;
+  border-right: solid 2px #CEAB73;
+  padding: 0px 10px;
+}
+
+header .icon-container .main-header .header .header-items p:nth-child(3) {
+  font-size: 15px;
+  color: white;
+  padding: 0px 10px;
+}
+
+header .icon-container .main-header .header .arrow-down {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .icon-container .main-header .header .arrow-down .material-icons {
+  animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse backwards;
+  color: white;
+  font-size: 30px;
+}
+
+header .icon-container .back-button p {
+  margin-bottom: 0.5rem;
+  margin-right: 10px;
+}
+
+header .icon-container .back-button p a {
+  color: white;
+  font-family: iranSans;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header .icon-container .back-button p a:hover {
+  text-decoration: none;
+}
+
+header .icon-container .back-button .material-icons {
+  color: #CEAB73;
+}
+
+header .icon-container .back-button:hover .material-icons {
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+main .about-container .container {
+  max-width: 1140 !important;
+}
+
+main .about-container .container .about .line-container {
+  width: 100%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .about-container .container .about .line-container .line {
+  width: 1px;
+  height: 100%;
+  background-color: #CEAB73;
+}
+
+main .about-container .container .about .about-description {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+main .about-container .container .about .about-description .about-title {
+  font-family: iranSansmed;
+  font-size: 20px;
+  color: #CEAB73;
+}
+
+main .about-container .container .about .about-description .about-title p:nth-child(2) {
+  text-align: center;
+  max-width: 600px;
+  color: white;
+  font-size: 17px;
+  font-family: iranSans;
+  line-height: 35px;
+}
+
+main .about-container .container .about .about-items {
+  width: 100%;
+  height: auto;
+}
+
+main .about-container .container .about .about-items .row .Graphics {
+  margin-bottom: 5rem;
+}
+
+main .about-container .container .about .about-items .row .Graphics .Icon-Graphics .material-icons {
+  color: #CEAB73;
+}
+
+main .about-container .container .about .about-items .row .Graphics p {
+  color: white;
+  margin-top: 10px;
+  font-family: iranSansmed;
+}
+
+main .about-container .container .about .about-items .row .Graphics .more-button p {
+  margin-bottom: 0.5rem;
+  margin-right: 10px;
+}
+
+main .about-container .container .about .about-items .row .Graphics .more-button p a {
+  color: white;
+  font-family: iranSans;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .about-container .container .about .about-items .row .Graphics .more-button p a:hover {
+  text-decoration: none;
+}
+
+main .about-container .container .about .about-items .row .Graphics .more-button .material-icons {
+  color: #CEAB73;
+  cursor: pointer;
+}
+
+main .about-container .container .about .about-items .row .Graphics .more-button:hover .material-icons {
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+main .about-container .container .about .about-items .row .Web {
+  margin-bottom: 5rem;
+}
+
+main .about-container .container .about .about-items .row .Web .Icon-web .material-icons {
+  color: #CEAB73;
+  cursor: pointer;
+}
+
+main .about-container .container .about .about-items .row .Web p {
+  color: white;
+  margin-top: 10px;
+  font-family: iranSansmed;
+}
+
+main .about-container .container .about .about-items .row .Web .more-button p {
+  margin-bottom: 0.5rem;
+  margin-right: 10px;
+}
+
+main .about-container .container .about .about-items .row .Web .more-button p a {
+  color: white;
+  font-family: iranSans;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .about-container .container .about .about-items .row .Web .more-button p a:hover {
+  text-decoration: none;
+}
+
+main .about-container .container .about .about-items .row .Web .more-button .material-icons {
+  color: #CEAB73;
+  cursor: pointer;
+}
+
+main .about-container .container .about .about-items .row .Web .more-button:hover .material-icons {
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+main .about-container .container .about .about-items .row .Social {
+  margin-bottom: 5rem;
+}
+
+main .about-container .container .about .about-items .row .Social .Icon-Social .material-icons {
+  color: #CEAB73;
+}
+
+main .about-container .container .about .about-items .row .Social p {
+  color: white;
+  margin-top: 10px;
+  font-family: iranSansmed;
+}
+
+main .about-container .container .about .about-items .row .Social .more-button p {
+  margin-bottom: 0.5rem;
+  margin-right: 10px;
+}
+
+main .about-container .container .about .about-items .row .Social .more-button p a {
+  color: white;
+  font-family: iranSans;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+main .about-container .container .about .about-items .row .Social .more-button p a:hover {
+  text-decoration: none;
+}
+
+main .about-container .container .about .about-items .row .Social .more-button .material-icons {
+  color: #CEAB73;
+  cursor: pointer;
+}
+
+main .about-container .container .about .about-items .row .Social .more-button:hover .material-icons {
+  -webkit-animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+main .Team-container .container {
+  max-width: 1140 !important;
+}
+
+main .Team-container .container .Team .line-container {
+  width: 100%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .Team-container .container .Team .line-container .line {
+  width: 1px;
+  height: 100%;
+  background-color: #CEAB73;
+}
+
+main .Team-container .container .Team .Team-description {
+  width: 100%;
+  height: auto;
+}
+
+main .Team-container .container .Team .Team-description .Team-title {
+  font-family: iranSansmed;
+  font-size: 20px;
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .Team-description .Team-title p:nth-child(2) {
+  text-align: center;
+  max-width: 600px;
+  color: white;
+  font-size: 30px;
+  font-family: iranSansmed;
+  line-height: 35px;
+}
+
+main .Team-container .container .Team .Team-items {
+  margin-top: 3rem;
+}
+
+main .Team-container .container .Team .Team-items .About-Team {
+  height: 308px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Description {
+  margin-bottom: 1rem;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Description .col-lg-8 {
+  -ms-flex: 0 0 66.666667%;
+  -webkit-box-flex: 0;
+          flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Description p {
+  color: white;
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: iranSans;
+  line-height: 45px;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile .photo {
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px 9px;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile .photo img {
+  width: 100%;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile .img {
+  border-left: solid 2px #CEAB73;
+  border-top: solid 2px #CEAB73;
+  padding: 23px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -2.9rem;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile .title {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 26px;
+  width: 61px;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile .title p:nth-child(2) {
+  font-size: 12px;
+  color: white;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .Team-items .About-Team .Profile .title p:nth-child(1) {
+  color: #CEAB73;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .Graphics-Team {
+  height: 308px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+}
+
+main .Team-container .container .Team .Graphics-Team .About-Graphics {
+  width: 100%;
+}
+
+main .Team-container .container .Team .Graphics-Team .photo-Graphics {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Graphics-Team .photo-Graphics img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Graphics-Team .Graphics-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .Graphics-Team .Graphics-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .Graphics-Team .Graphics-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .Graphics-Team .Graphics-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Team-container .container .Team .Front-Team {
+  height: 308px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+}
+
+main .Team-container .container .Team .Front-Team .About-Front {
+  width: 100%;
+}
+
+main .Team-container .container .Team .Front-Team .photo-Front {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Front-Team .photo-Front img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Front-Team .Front-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .Front-Team .Front-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .Front-Team .Front-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .Front-Team .Front-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Team-container .container .Team .Back-Team {
+  height: 308px;
+  border-bottom: solid 1px;
+}
+
+main .Team-container .container .Team .Back-Team .About-Back {
+  width: 100%;
+}
+
+main .Team-container .container .Team .Back-Team .photo-Back {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Back-Team .photo-Back img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Back-Team .Back-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .Back-Team .Back-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .Back-Team .Back-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .Back-Team .Back-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Team-container .container .Team .Word-Team {
+  height: 308px;
+  border-left: solid 1px;
+}
+
+main .Team-container .container .Team .Word-Team .About-Word {
+  width: 100%;
+}
+
+main .Team-container .container .Team .Word-Team .photo-Word {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Word-Team .photo-Word img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .Word-Team .Word-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .Word-Team .Word-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .Word-Team .Word-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .Word-Team .Word-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Team-container .container .Team .More-Team-1 {
+  height: 308px;
+  border-left: solid 1px;
+}
+
+main .Team-container .container .Team .More-Team-1 .About-More {
+  width: 100%;
+}
+
+main .Team-container .container .Team .More-Team-1 .photo-More {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .More-Team-1 .photo-More img {
+  width: 100%;
+}
+
+main .Team-container .container .Team .More-Team-1 .More-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .More-Team-1 .More-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .More-Team-1 .More-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .More-Team-1 .More-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Team-container .container .Team .More-Team-2 {
+  height: 308px;
+  border-left: solid 1px;
+}
+
+main .Team-container .container .Team .More-Team-2 .About-More {
+  width: 100%;
+}
+
+main .Team-container .container .Team .More-Team-2 .photo-More {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .More-Team-2 .photo-More img {
+  width: 100%;
+}
+
+main .Team-container .container .Team .More-Team-2 .More-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .More-Team-2 .More-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .More-Team-2 .More-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .More-Team-2 .More-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Team-container .container .Team .More-Team-3 {
+  height: 308px;
+  border-left: none;
+}
+
+main .Team-container .container .Team .More-Team-3 .About-More {
+  width: 100%;
+}
+
+main .Team-container .container .Team .More-Team-3 .photo-More {
+  background: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+main .Team-container .container .Team .More-Team-3 .photo-More img {
+  width: 100%;
+}
+
+main .Team-container .container .Team .More-Team-3 .More-name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main .Team-container .container .Team .More-Team-3 .More-name p {
+  margin-bottom: 0;
+  font-family: iranSans;
+}
+
+main .Team-container .container .Team .More-Team-3 .More-name p:nth-child(1) {
+  color: #CEAB73;
+}
+
+main .Team-container .container .Team .More-Team-3 .More-name p:nth-child(2) {
+  color: white;
+  font-size: 13px;
+}
+
+main .Contact-US .container .Contact .line-container {
+  width: 100%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .Contact-US .container .Contact .line-container .line {
+  width: 1px;
+  height: 100%;
+  background-color: #CEAB73;
+}
+
+main .Contact-US .container .Contact .Contact-description {
+  width: 100%;
+  height: auto;
+}
+
+main .Contact-US .container .Contact .Contact-description .Contact-title {
+  font-family: iranSansmed;
+  font-size: 20px;
+  color: #CEAB73;
+}
+
+main .Contact-US .container .Contact .Contact-description .Contact-title p:nth-child(2) {
+  text-align: center;
+  max-width: 600px;
+  color: white;
+  font-size: 25px;
+  font-family: iranSansmed;
+  line-height: 35px;
+}
+
+main .Contact-US .container .Contact .Contact-container .row .Contact-form {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+main .Contact-US .container .Contact .Contact-container .row .Contact-form .form-group input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #CEAB73;
+  border-radius: 1px;
+  color: white;
+  font-family: iranSans;
+  font-size: 15px;
+  width: 100%;
+}
+
+main .Contact-US .container .Contact .Contact-container .row .Contact-form .form-group input:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .Contact-US .container .Contact .Contact-container .row .Contact-form .form-group textarea {
+  background: transparent;
+  border: solid 1px #CEAB73;
+  color: white;
+  font-family: iranSans;
+  font-size: 15px;
+  width: 100%;
+}
+
+main .Contact-US .container .Contact .Contact-container .row .Contact-form button {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: solid 1px #CEAB73;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-family: iranSans;
+}
+
+main .Contact-US .container .Contact .Contact-container .row .Contact-form button:hover {
+  background: #CEAB73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0 !important;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/Backone.jpg);
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  max-width: 1400px !important;
+}
+
+main .about-container {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/Backtwo.jpg);
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .Team-container {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/BackFour.jpg);
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .Contact-US {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/Backthree.jpg);
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main iframe {
+  border: 0;
+  width: 100%;
+  height: 90%;
+  margin-top: 2rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .Team-container .container {
+    max-width: 1140 !important;
+  }
+  .Team-container .container .Team .line-container {
+    width: 100%;
+    height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Team-container .container .Team .line-container .line {
+    width: 1px;
+    height: 100%;
+    background-color: #CEAB73;
+  }
+  .Team-container .container .Team .Team-description {
+    width: 100%;
+    height: auto;
+  }
+  .Team-container .container .Team .Team-description .Team-title {
+    font-family: iranSansmed;
+    font-size: 20px;
+    color: #CEAB73;
+  }
+  .Team-container .container .Team .Team-description .Team-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 25px !important;
+    font-family: iranSansmed;
+    line-height: 35px;
+  }
+  .Team-container .container .Team .About-Team {
+    border-right: none;
+    border-bottom: none;
+  }
+  .Team-container .container .Team .About-Team .Description p {
+    color: white;
+    text-align: justify;
+    font-size: 10px !important;
+    font-weight: 100;
+    font-family: iranSans;
+    line-height: 33px !important;
+  }
+  .Team-container .container .Team .Graphics-Team {
+    height: 308px;
+  }
+  .Team-container .container .Team .Front-Team {
+    height: 308px;
+  }
+  .Team-container .container .Team .Back-Team {
+    height: 308px;
+  }
+  .Team-container .container .Team .Word-Team {
+    height: 308px;
+  }
+  .Team-container .container .Team .More-Team-1 {
+    height: 308px;
+  }
+  .Team-container .container .Team .More-Team-2 {
+    height: 308px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about .line-container {
+    width: 100%;
+    height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .line-container .line {
+    width: 1px;
+    height: 100%;
+    background-color: #CEAB73;
+  }
+  .about .about-description {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem !important;
+  }
+  .about .about-description .about-title {
+    font-family: iranSansmed;
+    font-size: 20px;
+    color: #CEAB73;
+  }
+  .about .about-description .about-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 15px !important;
+    font-family: iranSans;
+    line-height: 35px;
+  }
+  .about .about-items .row .Graphics {
+    margin-bottom: 3rem !important;
+  }
+  .about .about-items .row .Graphics p {
+    color: white;
+    margin-top: 10px;
+    font-family: iranSansmed;
+    font-size: 15px !important;
+  }
+  .about .about-items .row .Graphics .more-button p {
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+  }
+  .about .about-items .row .Graphics .more-button p a {
+    color: white;
+    font-family: iranSans;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .about .about-items .row .Graphics .more-button p a:hover {
+    text-decoration: none;
+  }
+  .about .about-items .row .Web {
+    margin-bottom: 3rem !important;
+  }
+  .about .about-items .row .Web p {
+    color: white;
+    margin-top: 10px;
+    font-family: iranSansmed;
+    font-size: 15px !important;
+  }
+  .about .about-items .row .Web .more-button p {
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+  }
+  .about .about-items .row .Web .more-button p a {
+    color: white;
+    font-family: iranSans;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .about .about-items .row .Web .more-button p a:hover {
+    text-decoration: none;
+  }
+  .about .about-items .row .Social {
+    margin-bottom: 3rem !important;
+  }
+  .about .about-items .row .Social p {
+    color: white;
+    margin-top: 10px;
+    font-family: iranSansmed;
+    font-size: 15px !important;
+  }
+  .about .about-items .row .Social .more-button p {
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+  }
+  .about .about-items .row .Social .more-button p a {
+    color: white;
+    font-family: iranSans;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .about .about-items .row .Social .more-button p a:hover {
+    text-decoration: none;
+  }
+  .Team-container .container {
+    max-width: 1140 !important;
+  }
+  .Team-container .container .Team .line-container {
+    width: 100%;
+    height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Team-container .container .Team .line-container .line {
+    width: 1px;
+    height: 100%;
+    background-color: #CEAB73;
+  }
+  .Team-container .container .Team .Team-description {
+    width: 100%;
+    height: auto;
+  }
+  .Team-container .container .Team .Team-description .Team-title {
+    font-family: iranSansmed;
+    font-size: 20px;
+    color: #CEAB73;
+  }
+  .Team-container .container .Team .Team-description .Team-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 25px !important;
+    font-family: iranSansmed;
+    line-height: 35px;
+  }
+  .Team-container .container .Team .Graphics-Team {
+    height: 308px;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  .Team-container .container .Team .Front-Team {
+    height: 308px;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  .Team-container .container .Team .Back-Team {
+    height: 308px;
+    border-bottom: none !important;
+  }
+  .Team-container .container .Team .Word-Team {
+    height: 308px;
+    border-left: none !important;
+  }
+  .Team-container .container .Team .More-Team-1 {
+    height: 308px;
+    border-left: none !important;
+  }
+  .Team-container .container .Team .More-Team-2 {
+    height: 308px;
+    border-left: none !important;
+  }
+  .Contact-US .container .Contact .Contact-description .Contact-title {
+    font-family: iranSansmed;
+    font-size: 15px;
+    color: #CEAB73;
+  }
+  .Contact-US .container .Contact .Contact-description .Contact-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 30px;
+    font-family: iranSansmed;
+    line-height: 35px;
+  }
+  .Contact-US .container .Contact .Contact-container .row .Contact-form {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 765px) {
+  .nav-container {
+    width: 100%;
+  }
+  .nav-container .nav-icon .icon-container {
+    -webkit-transform: scale(0.6) !important;
+            transform: scale(0.6) !important;
+  }
+  .main-header {
+    width: 100%;
+    height: 77vh;
+  }
+  .main-header .header {
+    width: 100%;
+    height: 70% !important;
+  }
+  .main-header .header .header-title {
+    border: none !important;
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .main-header .header .header-title p:nth-child(1) {
+    font-size: 28px !important;
+  }
+  .main-header .header .header-title p:nth-child(2) {
+    font-size: 24px !important;
+  }
+  .main-header .header .header-title p:nth-child(2) span {
+    font-size: 28px !important;
+  }
+  .main-header .header .header-items p:nth-child(1) {
+    font-size: 12px !important;
+  }
+  .main-header .header .header-items p:nth-child(2) {
+    font-size: 12px !important;
+  }
+  .main-header .header .header-items p:nth-child(3) {
+    font-size: 12px !important;
+  }
+  .about .line-container {
+    width: 100%;
+    height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .line-container .line {
+    width: 1px;
+    height: 100%;
+    background-color: #CEAB73;
+  }
+  .about .about-description {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem !important;
+  }
+  .about .about-description .about-title {
+    font-family: iranSansmed;
+    font-size: 18px !important;
+    color: #CEAB73;
+  }
+  .about .about-description .about-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 13px !important;
+    font-family: iranSans;
+    line-height: 35px;
+  }
+  .about .about-items .row .Graphics {
+    margin-bottom: 3rem !important;
+  }
+  .about .about-items .row .Graphics p {
+    color: white;
+    margin-top: 10px;
+    font-family: iranSansmed;
+    font-size: 15px !important;
+  }
+  .about .about-items .row .Graphics .more-button p {
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+  }
+  .about .about-items .row .Graphics .more-button p a {
+    color: white;
+    font-family: iranSans;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .about .about-items .row .Graphics .more-button p a:hover {
+    text-decoration: none;
+  }
+  .about .about-items .row .Web {
+    margin-bottom: 3rem !important;
+  }
+  .about .about-items .row .Web p {
+    color: white;
+    margin-top: 10px;
+    font-family: iranSansmed;
+    font-size: 15px !important;
+  }
+  .about .about-items .row .Web .more-button p {
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+  }
+  .about .about-items .row .Web .more-button p a {
+    color: white;
+    font-family: iranSans;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .about .about-items .row .Web .more-button p a:hover {
+    text-decoration: none;
+  }
+  .about .about-items .row .Social {
+    margin-bottom: 3rem !important;
+  }
+  .about .about-items .row .Social p {
+    color: white;
+    margin-top: 10px;
+    font-family: iranSansmed;
+    font-size: 15px !important;
+  }
+  .about .about-items .row .Social .more-button p {
+    margin-bottom: 0.5rem;
+    margin-right: 10px;
+  }
+  .about .about-items .row .Social .more-button p a {
+    color: white;
+    font-family: iranSans;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  .about .about-items .row .Social .more-button p a:hover {
+    text-decoration: none;
+  }
+  .Team-container .container {
+    max-width: 1140 !important;
+  }
+  .Team-container .container .Team .line-container {
+    width: 100%;
+    height: 12vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Team-container .container .Team .line-container .line {
+    width: 1px;
+    height: 100%;
+    background-color: #CEAB73;
+  }
+  .Team-container .container .Team .Team-description {
+    width: 100%;
+    height: auto;
+  }
+  .Team-container .container .Team .Team-description .Team-title {
+    font-family: iranSansmed;
+    font-size: 18px;
+    color: #CEAB73;
+  }
+  .Team-container .container .Team .Team-description .Team-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 18px !important;
+    font-family: iranSansmed;
+    line-height: 35px;
+  }
+  .Team-container .container .Team .Graphics-Team {
+    height: 308px;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  .Team-container .container .Team .Front-Team {
+    height: 308px;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  .Team-container .container .Team .Back-Team {
+    height: 308px;
+    border-bottom: none !important;
+  }
+  .Team-container .container .Team .Word-Team {
+    height: 308px;
+    border-left: none !important;
+  }
+  .Team-container .container .Team .More-Team-1 {
+    height: 308px;
+    border-left: none !important;
+  }
+  .Team-container .container .Team .More-Team-2 {
+    height: 308px;
+    border-left: none !important;
+  }
+  .Contact-US .container .Contact .Contact-description .Contact-title {
+    font-family: iranSansmed;
+    font-size: 18px !important;
+    color: #CEAB73;
+  }
+  .Contact-US .container .Contact .Contact-description .Contact-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 18px !important;
+    font-family: iranSansmed;
+    line-height: 35px;
+  }
+  .Contact-US .container .Contact .Contact-container .row .Contact-form {
+    margin-bottom: 2rem !important;
+  }
+  .Contact-US .container .Contact .Contact-container .row .Map {
+    height: 50vh !important;
+  }
+}
+
+@media (max-width: 359px) {
+  .nav-container {
+    width: 100%;
+    height: 10vh !important;
+  }
+  .nav-container .nav-icon .icon-container {
+    -webkit-transform: scale(0.6) !important;
+            transform: scale(0.6) !important;
+  }
+  .main-header {
+    width: 100%;
+    height: 77vh;
+  }
+  .main-header .header {
+    width: 100%;
+    height: 70% !important;
+  }
+  .main-header .header .header-title {
+    border: none !important;
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .main-header .header .header-title p:nth-child(1) {
+    font-size: 20px !important;
+  }
+  .main-header .header .header-title p:nth-child(2) {
+    font-size: 20px !important;
+  }
+  .main-header .header .header-title p:nth-child(2) span {
+    font-size: 20px !important;
+  }
+  .main-header .header .header-items p:nth-child(1) {
+    font-size: 10px !important;
+  }
+  .main-header .header .header-items p:nth-child(2) {
+    font-size: 10px !important;
+  }
+  .main-header .header .header-items p:nth-child(3) {
+    font-size: 10px !important;
+  }
+  .Contact-US .container .Contact .Contact-description .Contact-title {
+    font-family: iranSansmed;
+    font-size: 15px;
+    color: #CEAB73;
+  }
+  .Contact-US .container .Contact .Contact-description .Contact-title p:nth-child(2) {
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 22px !important;
+    font-family: iranSansmed;
+    line-height: 35px;
+  }
+  .Contact-US .container .Contact .Contact-container .row .Contact-form {
+    margin-bottom: 5rem !important;
+  }
+  .Contact-US .container .Contact .Contact-container .row .Map {
+    height: 50vh !important;
+  }
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+label {
+  font-family: iranSans;
+  font-size: 1rem !important;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

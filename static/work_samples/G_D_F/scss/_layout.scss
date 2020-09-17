@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    direction: rtl;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    background-image: url(../image/P4_Cube_page-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: black;
+    opacity: 0.9;
+    .container {
+        max-width: 1400px !important;
+    }
+    .header-container {
+        width: 100%;
+        height: 60px;
+        .header {
+            position: relative;
+        }
+    }
+    .main-section {
+        width: 100%;
+        position: relative;
+        margin-top: 130px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 770px;
+    background-image: url(../image/Contact.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    .container {
+        max-width: 1400px !important;
+    }
+}

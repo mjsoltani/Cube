@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طراحی سایت</title>
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="shortcut icon" href="{% static 'web_design/image/logo.png' %}" type="image/x-icon">
+    <!--link owlcarousel-->
+    <link rel="stylesheet" href="{% static 'web_design/library/owl/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web_design/library/owl/assets/owl.theme.default.min.css' %}">
+    <!--icon responsiv-->
+    <link rel="stylesheet" href="{% static 'web_design/css/style8.css' %}">
+    <link rel="stylesheet" href="{% static 'web_design/css/normalize.css' %}">
+    <script src="{% static 'web_design/js/modernizr.custom.js' %}"></script>
+    <!--AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link main.css-->
+    <link rel="stylesheet" href="{% static 'web_design/css/main.css' %}">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="icon-container">
+            <div class="header-container">
+                <div class="container">
+                    <div class="nav-container">
+                        <!--header logo-->
+                        <div class="nav-ju d-flex justify-content-between">
+                            <div class="nav-logo">
+                                <a href="{% url 'porto:portfolio' %}">
+                                    <img src="{% static 'web_design/image/Up Right Icon - cube logo.png' %}" alt="logo">
+                                </a>
+                            </div>
+                            <!--header button-->
+                            <div class="nav-button ">
+                                <div class="header-button d-none d-lg-block">
+                                    <button type="submit">
+                                    <a href="{% url 'porto:about_us' %}">ارتباط با ما</a>
+                                </button>
+                                </div>
+                                <!--header icon responsiv-->
+                                <div class="header-icon d-block d-lg-none">
+                                    <button id="trigger-overlay">
+                                        <div class="icon-container" >
+                                            <div class="bar1"></div>
+                                            <div class="bar2"></div>
+                                            <div class="bar3"></div>
+                                        </div>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--main header-->
+                    <div class="main-header">
+                        <div class="header">
+                            <div class="row">
+                                <div class="text-header d-flex flex-column justify-content-center align-items-center align-items-md-start col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <p>بهتر از عالی !</p>
+                                    <p>حرفه ای باش ! بهترین باش
+                                    </p>
+                                    <p>با کیفیت بالا و خلاقیت بی مانند در طراحی سایت ما شما را در این راه همراهی میکنیم. در تمام مسیر طراحی، اجرا و سئو به ما بسپارید و با خیال راحت بهترین باشید!</p>
+                                    <button>
+                                    <a href="{% url 'porto:WS_WDT' %}">ادامه</a>
+                                </button>
+                                </div>
+                                <!--header video-->
+                                <div class="header-background  col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+                                    <div class="img d-flex  justify-content-center">
+                                        <video class="video" autoplay muted loop>
+                                            <source src="{% static 'web_design/image/Main-1.mp4' %}" >
+                                            </video>
+                                    </div>
+                                    <!--/header video-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--/main header-->
+                    </div>
+                </div>
+            </div>
+            <!--/header-->
+    </header>
+    <!--main-->
+    <main>
+        <div class="main-description">
+            <div class="container">
+                <!--description-->
+                <div class="description d-flex flex-column align-items-center justify-content-center justify-content-md-start" data-aos="fade-up">
+                    <p>در تمام زمینه ها از فروشگاه تا شرکت</p>
+                    <p>شما میتوانید در انواع زمینه های طراحی سایت روی ما حساب کنید. خدمات ما بخش گسترده ای از انواع سایت های فروشگاهی،شرکتی،شخصی،پورتفولیو وحتی تولید محتوا وب سایت شامل میشود.</p>
+                </div>
+                <!--description slider-->
+                <div class="description-slider" data-aos="zoom-in">
+                    <div class="owl-carousel owl-theme">
+                        <div class="post">
+                            <div class="item" id="personal_item">
+                                <img src="{% static 'web_design/image/slider/main_Slide-photos_personal.jpg' %}" alt="personal-slide">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="item" id="company_item">
+                                <img src="{% static 'web_design/image/slider/main_Slide-photos_company.jpg' %}" alt="company-slider">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="item" id="store_item">
+                                <img src="{% static 'web_design/image/slider/main_Slide-photos_store.jpg' %}" alt="store-slider">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="item" id="portfolio_item">
+                                <img src="{% static 'web_design/image/slider/main_Slide-photos_portfolio.jpg' %}" alt="portfolio-slider">
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="item" id="blog_item">
+                                <img src="{% static 'web_design/image/slider/main_Slide-photos_blog.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/decription silder-->
+                </div>
+            </div>
+        </div>
+        <!---main sevices-->
+        <div class="main-Services">
+            <div class="Services-container">
+                <div class="container">
+                    <div class="Services d-flex flex-column align-items-center align-items-lg-start" data-aos="flip-down">
+                        <p>گوشه ایی از</p>
+                        <p>خدمات ما !</p>
+                    </div>
+                    <div class="Services-items d-flex flex-column">
+                        <div class="item" id="item1" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="Services-text col-lg-8 col-12 col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
+                                    <p>طراحی اصولی براساس ui/ux طراحی ریسپانسو واکنش گرا </p>
+                                </div>
+                                <div class="Services-image col-lg-4 col-12 col-sm-12 col-md-5  d-flex justify-content-center ">
+                                    <img src="{% static 'web_design/image/Vector Smart Object-1.png' %}" alt="Services image 1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" id="item2" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="Services-text col-lg-8 col-12 col-sm-12 col-md-7 d-flex align-items-center justify-content-md-start justify-content-center order-md-1 order-0">
+                                    <p>طراحی انواع صفحات <span>(متون-فرم ها -گالری-سامانه ها و...)</span><br>بهینه سازی وب سایت </p>
+                                </div>
+                                <div class="Services-image col-lg-4 col-12 col-sm-12 col-md-5  d-flex justify-content-center order-1 order-md-0">
+                                    <img src="{% static 'web_design/image/Vector Smart Object-3.png' %}" alt="Services image 2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" id="item3" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="Services-text col-lg-8 col-12 col-sm-12 col-md-7  d-flex align-items-center justify-content-center justify-content-md-end">
+                                    <p>امنیت قوی<br> پنل مدیریت
+                                    </p>
+                                </div>
+                                <div class="Services-image col-lg-4 col-12 col-sm-12 col-md-5 d-flex justify-content-center ">
+                                    <img src="{% static 'web_design/image/Vector Smart Object-1.png' %}" alt="Services image 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" id="item4" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="row ">
+                                <div class="Services-text col-lg-9 col-12 col-sm-12 col-md-7 d-flex flex-column align-items-center align-items-md-start justify-content-center order-md-1 order-0 ">
+                                    <p>خدمات سئو </p>
+                                    <p>ابزار رشد</p>
+                                </div>
+                                <div class="Services-image col-lg-3 col-12 col-sm-12 col-md-5 d-flex justify-content-center order-1 order-md-0 ">
+                                    <img src="{% static 'web_design/image/Vector Smart Object-2.png' %}" alt="Services image 4 ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---/main sevices-->
+        </div>
+    </main>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer-container d-flex align-items-center " data-aos="zoom-in">
+            <div class="footer-text ">
+                <div class="container d-flex flex-column align-items-center align-items-lg-start ">
+                    <p>جهت اطلاعات بیشتر</p>
+                    <p>از فرم درخواست مشاوره یا با ما تماس بگیرید...</p>
+                    <div class="footer-button ">
+                        <button>
+                        <a href="{% url 'porto:about_us' %}">ارتباط با ما</a>
+                    </button>
+                        <p>0910-337-1457</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+    <div class="overlay overlay-contentscale ">
+        <!--navbar responsive-->
+        <button type="button " class="overlay-close ">Close</button>
+        <nav>
+            <ul>
+                <li><a href="{% url 'porto:portfolio' %}">صفحه اصلی </a></li>
+                <li><a href="{% url 'porto:about_us' %}">درباره ما</a></li>
+                <li><a href="{% url 'porto:WS_WDT' %}">نمونه کار ها</a></li>
+            </ul>
+        </nav>
+        <!--/navbar responsive-->
+    </div>
+
+
+    <!--script bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js " integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k " crossorigin="anonymous "></script>
+    <!--script icon responsiv-->
+    <script src="{% static 'web_design/js/classie.js' %}"></script>
+    <script src="{% static 'web_design/js/demo7.js' %}"></script>
+    <!--script owlcarousel-->
+    <script src="{% static 'web_design/library/owl/owl.carousel.min.js' %}"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js " integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin=" anonymous "></script>
+    <!--script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <!--script app.js-->
+    <script src="{% static 'web_design/js/app.js' %}"></script>
+</body>
+
+</html>

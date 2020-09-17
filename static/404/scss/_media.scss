@@ -1,0 +1,52 @@
+@media(max-width:991px) {
+    section {
+        .container {
+            .main-section {
+                .row {
+                    .main-symbol {
+                        .symbol {
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:765px) {
+    section {
+        width: 100%;
+        height: 100vh !important;
+        background-image: url(../ui/Backthree.jpg);
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        .container {
+            .main-section {
+                .row {
+                    .main-title {
+                        width: 100%;
+                        height: auto;
+                        .title {
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    .main-symbol {
+                        width: 100%;
+                        height: auto;
+                        .symbol {
+                            border: none !important;
+                            animation: none;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

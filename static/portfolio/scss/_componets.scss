@@ -1,0 +1,607 @@
+main {
+    .icon-container {
+        display: inline-block;
+        cursor: pointer;
+        border: solid 1px white;
+        border-radius: 110%;
+        padding: 4px 7px;
+        transform: scale(0.95);
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 23px;
+        height: 2px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        transform: rotate(-46deg) translate(-4px, 3px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    #showMenu {
+        background: none;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    #fullpage {
+        .s1 {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            .video-container {
+                background: rgba(0, 0, 0, 0.6);
+                position: fixed;
+                top: 0rem;
+                opacity: 0.4;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100vh;
+                .video {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    min-width: 100%;
+                    min-height: 101%;
+                    width: auto;
+                    height: auto;
+                    z-index: -100;
+                    -webkit-transform: translateX(-50%) translateY(-50%);
+                    transform: translateX(-50%) translateY(-50%);
+                    background-size: cover;
+                }
+            }
+            .NavICon {
+                z-index: 50;
+                .container__Icon {
+                    display: inline-block;
+                    cursor: pointer;
+                    border: solid 1px white;
+                    border-radius: 110%;
+                    padding: 4px 7px;
+                }
+                .bar1,
+                .bar2,
+                .bar3 {
+                    width: 23px;
+                    height: 2px;
+                    background-color: white;
+                    margin: 6px 0;
+                    transition: 0.4s;
+                }
+                .change .bar1 {
+                    transform: rotate(-46deg) translate(-4px, 3px);
+                }
+                .change .bar2 {
+                    opacity: 0;
+                }
+                .change .bar3 {
+                    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                    transform: rotate(45deg) translate(-8px, -8px);
+                }
+            }
+            .first-logo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 30;
+                img {
+                    width: 130px;
+                    z-index: 30;
+                }
+            }
+            .first-main-part {
+                width: 100%;
+                position: relative;
+                z-index: 30;
+                height: 90vh;
+                top: -10vh;
+                .main-logo img {
+                    width: 170px;
+                    z-index: 30;
+                    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) 5s both;
+                }
+                .first-main-text {
+                    max-width: 620px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    color: white;
+                    z-index: 30;
+                    animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 5.5s both;
+                    p:nth-child(1) {
+                        font-size: 16px;
+                        font-family: iranSansmed;
+                        margin-bottom: 20px;
+                        z-index: 30;
+                    }
+                    p:nth-child(2) {
+                        font-size: 16px;
+                        font-family: iranSans;
+                        z-index: 30;
+                    }
+                    .section-button {
+                        width: 63%;
+                        z-index: 30;
+                        margin-bottom: 0%;
+                        a {
+                            color: white;
+                            font-family: iranSans;
+                            border: solid 1px white;
+                            padding: 5px 34px;
+                            border-radius: 20px;
+                            font-size: 14px;
+                            display: block;
+                            transition-duration: 0.5s;
+                            z-index: 30;
+                            &:hover {
+                                text-decoration: none;
+                                background-color: rgb(217, 180, 120);
+                                color: white;
+                            }
+                        }
+                        a:nth-child(1) {
+                            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+                        }
+                        a:nth-child(2) {
+                            animation: slide-in-let 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6.4s both;
+                        }
+                    }
+                }
+            }
+        }
+        .s2 {
+            background-image: url(../ui/Final-Useing-Photos/Slide-2/HomepageSee-Potrfolio-black.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            width: 100%;
+            height: 100vh;
+            .logo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 30;
+                img {
+                    width: 130px;
+                }
+            }
+            .container {
+                .second-main-part {
+                    .second-main-text {
+                        width: 100%;
+                        height: 73vh;
+                        p {
+                            color: white;
+                        }
+                        p:nth-child(2) {
+                            margin-bottom: 25px;
+                            margin-top: 0;
+                            font-family: iranSans;
+                            font-size: 14px;
+                            margin-right: 1rem;
+                        }
+                        p:nth-child(1) {
+                            font-family: iranSansbold;
+                            margin-bottom: 12px;
+                            font-size: 20px;
+                            margin-right: 1rem;
+                        }
+                        p:nth-child(3) {
+                            font-family: iranSans;
+                            font-size: 16px;
+                            max-width: 511px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            line-height: 32px;
+                            text-align: justify;
+                            margin-right: 1rem;
+                        }
+                        a {
+                            position: absolute;
+                            top: 12.5rem;
+                            color: white;
+                            font-family: iranSans;
+                            border: solid 1px white;
+                            padding: 7px 20px;
+                            border-radius: 20px;
+                            font-size: 13px;
+                            display: block;
+                            transition-duration: 0.5s;
+                            z-index: 30;
+                            margin-right: 1rem;
+                            &:hover {
+                                text-decoration: none;
+                                background-color: rgb(217, 180, 120);
+                                color: white;
+                            }
+                        }
+                    }
+                    .second-main-picture {
+                        width: 100%;
+                        height: 80vh;
+                        img {
+                            width: 700px;
+                        }
+                    }
+                }
+            }
+        }
+        .s3 {
+            background-image: url(../ui/Final-Useing-Photos/Slide-3/HomepagePrices---Withe.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            width: 100%;
+            height: 100vh;
+            .logo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 30;
+                img {
+                    width: 130px;
+                }
+            }
+            .third-main {
+                width: 100%;
+                height: 90vh;
+                position: relative;
+                top: -10vh;
+                .border-right {
+                    width: 5px;
+                    height: 4rem;
+                    background: black;
+                    position: relative;
+                    left: 91px;
+                    border: solid;
+                    border-radius: 18px;
+                }
+                .border-left {
+                    width: 5px;
+                    height: 4rem;
+                    background: black;
+                    position: relative;
+                    right: 91px;
+                    border: solid;
+                    border-radius: 18px;
+                }
+                .items-container {
+                    .spiction-items {
+                        padding: 0;
+                        .item-3 {
+                            img {
+                                width: 270px;
+                                cursor: pointer;
+                            }
+                            p {
+                                margin-top: 15px;
+                                font-family: iranSans;
+                                font-size: 15px;
+                            }
+                            transition-duration: 1s;
+                            &:hover {
+                                transition-duration: 1s;
+                            }
+                        }
+                    }
+                    .container-item {
+                        padding: 0;
+                        .item-1 {
+                            img {
+                                width: 270px;
+                                cursor: pointer;
+                                 ::after {
+                                    background-color: black;
+                                    width: 100%;
+                                    height: 20vh;
+                                }
+                            }
+                            p {
+                                margin-top: 15px;
+                                font-family: iranSans;
+                                font-size: 15px;
+                            }
+                            transition-duration: 1s;
+                            &:hover {
+                                transition-duration: 1s;
+                            }
+                        }
+                        .item-2 {
+                            margin-left: 10px;
+                            img {
+                                width: 270px;
+                                cursor: pointer;
+                            }
+                            p {
+                                margin-top: 15px;
+                                font-family: iranSans;
+                                font-size: 15px;
+                            }
+                            transition-duration: 1s;
+                            &:hover {
+                                transition-duration: 1s;
+                            }
+                        }
+                    }
+                    position: relative;
+                    top: 2rem;
+                }
+            }
+        }
+        .s4 {
+            background-image: url(../ui/Final-Useing-Photos/Slide-4/HomepageContent-making---black.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            width: 100%;
+            height: 100vh;
+            .logo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 30;
+                img {
+                    width: 130px;
+                }
+            }
+            .container {
+                .Fourth-main-part {
+                    .Fourth-main-text {
+                        width: 100%;
+                        height: 75vh;
+                        p {
+                            color: white;
+                        }
+                        p:nth-child(2) {
+                            margin-bottom: 25px;
+                            margin-top: 0;
+                            font-family: iranSans;
+                            font-size: 14px;
+                            margin-right: 1rem;
+                        }
+                        p:nth-child(1) {
+                            font-family: iranSansbold;
+                            margin-bottom: 12px;
+                            font-size: 20px;
+                            margin-right: 1rem;
+                        }
+                        p:nth-child(3) {
+                            font-family: iranSans;
+                            font-size: 16px;
+                            max-width: 480px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            line-height: 32px;
+                            text-align: justify;
+                            margin-right: 1rem;
+                        }
+                        a {
+                            position: absolute;
+                            top: 12.5rem;
+                            color: white;
+                            font-family: iranSans;
+                            border: solid 1px white;
+                            padding: 7px 20px;
+                            border-radius: 20px;
+                            font-size: 13px;
+                            display: block;
+                            transition-duration: 0.5s;
+                            z-index: 30;
+                            margin-right: 1rem;
+                            &:hover {
+                                text-decoration: none;
+                                background-color: rgb(217, 180, 120);
+                                color: white;
+                            }
+                        }
+                    }
+                    .Fourth-main-picture {
+                        width: 100%;
+                        height: 80vh;
+                        img {
+                            width: 540px;
+                        }
+                    }
+                }
+            }
+        }
+        .s5 {
+            background-image: url(../ui/Final-Useing-Photos/Slide-5/HomepageSocial-Markething---Withe.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            width: 100%;
+            height: 100vh;
+            .logo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 30;
+                img {
+                    width: 130px;
+                }
+            }
+            .container {
+                .Fifth-main-part {
+                    .Fifth-main-text {
+                        width: 100%;
+                        height: 67vh;
+                        p {
+                            color: black;
+                        }
+                        p:nth-child(2) {
+                            margin-bottom: 25px;
+                            margin-top: 0;
+                            font-family: iranSans;
+                            font-size: 14px;
+                            margin-right: 1rem;
+                        }
+                        p:nth-child(1) {
+                            font-family: iranSansbold;
+                            margin-bottom: 12px;
+                            font-size: 20px;
+                            margin-right: 1rem;
+                        }
+                        p:nth-child(3) {
+                            font-family: iranSans;
+                            font-size: 16px;
+                            margin-right: 1rem;
+                            max-width: 460px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            line-height: 32px;
+                            text-align: justify;
+                            margin-right: 1rem;
+                        }
+                        a {
+                            position: absolute;
+                            top: 12.5rem;
+                            color: black;
+                            font-family: iranSans;
+                            border: solid 1px black;
+                            padding: 7px 20px;
+                            border-radius: 20px;
+                            font-size: 13px;
+                            display: block;
+                            transition-duration: 0.5s;
+                            z-index: 30;
+                            margin-right: 1rem;
+                            &:hover {
+                                text-decoration: none;
+                                background-color: rgb(217, 180, 120);
+                                color: white !important;
+                                border: solid 1px white;
+                            }
+                        }
+                    }
+                    .Fifth-main-picture {
+                        width: 100%;
+                        height: 80vh;
+                        img {
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+        .s6 {
+            background-image: url(../ui/Final-Useing-Photos/Slide-6/HomepageEnd-Part---black.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            width: 100%;
+            height: 100vh;
+            .logo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                z-index: 30;
+                img {
+                    width: 130px;
+                }
+            }
+            .Sixth-main-part {
+                width: 100%;
+                height: 75vh;
+                position: relative;
+                z-index: 30;
+                justify-content: center;
+                .main-logo img {
+                    width: 170px;
+                    z-index: 30;
+                    margin-bottom: 2rem;
+                }
+                .Sixth-main-text {
+                    max-width: 620px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    color: white;
+                    margin-top: 2rem;
+                    z-index: 30;
+                    p:nth-child(1) {
+                        font-size: 16px;
+                        font-family: iranSansmed;
+                        margin-bottom: 20px;
+                        z-index: 30;
+                        margin-top: -1rem;
+                    }
+                    p:nth-child(2) {
+                        font-weight: 700;
+                        margin-top: 2rem;
+                        margin-bottom: 4rem;
+                    }
+                    .section-button {
+                        width: 80%;
+                        z-index: 30;
+                        a {
+                            color: white;
+                            font-family: iranSans;
+                            font-size: 9px;
+                            transition-duration: 0.5s;
+                            z-index: 30;
+                            margin: 0px 7px;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    #infoMenu {
+        a {
+            color: white;
+            font-family: iranSans;
+            font-size: 14px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .items {
+            width: 31%;
+            span {
+                margin: 0px 8px;
+                a {
+                    color: white;
+                    font-family: iranSans;
+                    font-size: 14px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

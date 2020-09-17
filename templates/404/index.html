@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '404/css/main.css' %}">
+    <title>404</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="main-section">
+                <div class="row">
+                    <div class="main-title col-12 col-sm-12 col-md-7 col-lg-7 d-flex  justify-content-center align-items-center order-1">
+                        <div class="title d-flex flex-column align-items-center">
+                            <p>Oops!</p>
+                            <p>PAGE NOT FOUND ON SERVER</p>
+                            <p>The like you followed is either outdated, inaccurate, or the server has been instructed not to let you hav it.</p>
+                            <button>
+                                <a href="{% url 'porto:portfolio' %}">Go to Home</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="main-symbol col-12 col-sm-12 col-md-5 col-lg-5 order-0 d-md-flex align-items-center justify-content-center d-none">
+                        <div class="symbol ">
+                            <p>404</p>
+                            <p>Page Not Found</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--script bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js " integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k " crossorigin="anonymous "></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js " integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin=" anonymous "></script>
+    <!--app.js-->
+    <script src="{% static '404/js/app.js' %}"></script>
+</body>
+
+</html>
